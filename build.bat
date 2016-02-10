@@ -1,0 +1,1 @@
+pandoc цовс-уЩСw.txt -o ..\mengzi.html -s
