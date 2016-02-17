@@ -1,0 +1,7 @@
+# Could not convert to PDF
+
+## Symptom
+
+When a word document is saved as a pdf document (使用金文字體時), the word application shows an error message: "The export failed due to un unexpected error"
+
+- The [workaround](http://wordribbon.tips.net/T011430_Problems_Saving_as_PDF.html) does not work.
