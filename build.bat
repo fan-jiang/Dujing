@@ -1,1 +1,1 @@
-pandoc ÃÏ×Ó-Õýów.txt -o ..\mengzi.html -s
+pandoc mengzi.txt -o ..\mengzi.html -s
