@@ -1,1 +1,1 @@
-pandoc mengzi.txt -o mengzi.html --standalone --toc --css=UnemphasizedName.css --verbose
+pandoc mengzi.txt -o mengzi.html --standalone --toc --css=UnemphasizedName.css --css=FormatHeader.css --verbose
