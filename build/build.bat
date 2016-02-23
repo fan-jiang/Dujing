@@ -1,0 +1,1 @@
+pandoc ..\source\mengzi.txt -o mengzi_TraditionalFont_UnemphasizedName_FontSize48.html --standalone --toc --css=..\css\UnemphasizedName.css --css=..\css\FormatHeader.css --verbose
