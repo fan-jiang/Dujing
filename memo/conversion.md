@@ -1,4 +1,11 @@
-﻿- pandoc中文pdf转换攻略
+﻿# Generate PDF file
+
+- From wkhtmltopdf.org, download 64 bit wkhtmltopdf
+- Append `C:\Program Files\wkhtmltopdf\bin` the system variable "Path"
+
+# Other recommended ways
+
+- pandoc中文pdf转换攻略
 
 	http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html
 
