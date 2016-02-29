@@ -1,0 +1,23 @@
+em
+{ 
+	/*
+	Person name
+	*/
+	font-style: italic;
+}
+
+strong
+{
+	/*
+	Dynasty name
+	*/
+	text-decoration: underline;
+}  
+
+code
+{
+	/*
+	Place and country name
+	*/
+	font-weight: bold;
+}

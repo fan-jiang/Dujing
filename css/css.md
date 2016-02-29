@@ -1,5 +1,4 @@
-- The place and person names are marked as em tag. em can be defined as 
-follows to underline the text.
+
 
 - IE can open ±±ŽŸ´ó×­ÎÄ£¬ use CreatePDF to convert it to PDF file.
 ```
