@@ -1,18 +1,25 @@
 Set DecorateName=DecorateName
 Set Book=mencius
 Set FontType=Traditional
-Set FontSize=FontSize48
-Set BookFont=%Book%_%FontType%_%FontSize%
+Set BookFont=%Book%_%FontType%
 Set CSSExt=.css
 Set CSS_=--css=..\css\
-Set FontSizeStyle=%CSS_%FontSize%CSSExt%
 Set NameStyle=%CSS_%%DecorateName%%CSSExt%
 Set Output=%BookFont%
-Set Style=%FontSizeStyle% 
 
 If "%1" == "name" (
 	Set Output=%Output%_%DecorateName%
-	Set Style=%Style% %NameStyle%
+	Set Style=%NameStyle%
+)
+
+If Not "%2" == "" (
+	Set Output=%Output%_%2
+	Set Style=%Style% %CSS_%%2%CSSExt%
+)
+
+If Not "%3" == "" (
+	Set Output=%Output%_%3
+	Set Style=%Style% %CSS_%%3%CSSExt%
 )
 
 Set HTMLExt=.html
