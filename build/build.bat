@@ -26,4 +26,4 @@ Set HTMLExt=.html
 Set HTMLOutput=%Output%%HTMLExt%
 
 Call pandoc ..\source\%Book%.md -o %HTMLOutput% --standalone --toc %Style% --verbose
-Call wkhtmltopdf.exe %HTMLOutput% %Output%.pdf
+Call wkhtmltopdf.exe --margin-top 15 --margin-bottom 15 --header-center [section] --header-left [subsection] --header-right [page] --header-line --header-spacing 5 --footer-center "Version 0.1" --footer-line --footer-spacing 5 %HTMLOutput% %Output%.pdf
