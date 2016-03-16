@@ -2,3 +2,8 @@ hr
 { 
 	page-break-after: always;
 }
+
+h2
+{
+	text-align: center;
+}
