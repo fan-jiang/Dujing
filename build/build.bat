@@ -5,11 +5,13 @@ Set BookFont=%Book%_%FontType%
 Set CSSExt=.css
 Set CSS_=--css=..\css\
 Set NameStyle=%CSS_%%DecorateName%%CSSExt%
+Set Style=%CSS_%Common%CSSExt%
+
 Set Output=%BookFont%
 
 If "%1" == "name" (
 	Set Output=%Output%_%DecorateName%
-	Set Style=%NameStyle%
+	Set Style=%Style% %NameStyle%
 )
 
 If Not "%2" == "" (
