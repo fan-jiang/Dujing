@@ -1,0 +1,1 @@
+..\opencc-0.4.2\opencc -i mencius.md -o mencius.simplified.md -c ..\opencc-0.4.2\zht2zhs.ini
