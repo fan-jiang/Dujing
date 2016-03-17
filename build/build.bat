@@ -1,6 +1,6 @@
 Set DecorateName=DecorateName
-Set Book=mencius
-Set FontType=Traditional
+Set Book=mencius.simplified
+Set FontType=Simplified
 Set BookFont=%Book%_%FontType%
 Set CSSExt=.css
 Set CSS_=--css=..\css\

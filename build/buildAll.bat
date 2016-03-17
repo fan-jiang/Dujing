@@ -9,4 +9,4 @@ Call build
 ::Call build name JinWen FontSize96
 
 ::Del *.html
-start mencius_Traditional.pdf
+start mencius.simplified_Simplified.pdf
