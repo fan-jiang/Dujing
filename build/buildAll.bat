@@ -1,6 +1,13 @@
 TaskKill /f /im AcroRd32.exe
-Call build Mencius_Traditional
-Call build Mencius_Simplified
+Set T=Traditional
+Set S=Simplified
+Set BookName=mencius_
+Call build %BookName%%T%
+Call build %BookName%%S%
+Set BookName=ZhongYong_
+Call build %BookName%%T%
+Call build %BookName%%S%
+
 ::Call build name SongTi FontSize48
 ::Call build name QuanZiKuFont FontSize48
 ::Call build name BeiShiDaFont FontSize48
