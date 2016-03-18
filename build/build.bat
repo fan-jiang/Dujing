@@ -1,14 +1,11 @@
 Set DecorateName=DecorateName
-Set Book=Mencius_Traditional
-Set Output=%Book%
 Set CSSExt=.css
 Set CSS_=--css=..\css\
 Set NameStyle=%CSS_%%DecorateName%%CSSExt%
 Set Style=%CSS_%Common%CSSExt%
 
 If Not "%1" == "" (
-	Set Book=%1
-	Set Output=%1%
+	Set Output=%Book%
 )
 
 If "%2" == "name" (

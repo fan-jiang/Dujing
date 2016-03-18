@@ -1,12 +1,16 @@
 TaskKill /f /im AcroRd32.exe
 Set T=Traditional
 Set S=Simplified
-Set BookName=mencius_
-Call build %BookName%%T%
-Call build %BookName%%S%
+Set BookName=Mencius_
+Set Book=%BookName%%T%
+Call build %Book%
+Set Book=%BookName%%S%
+Call build %Book%
 Set BookName=ZhongYong_
-Call build %BookName%%T%
-Call build %BookName%%S%
+Set Book=%BookName%%T%
+Call build %Book%
+Set Book=%BookName%%S%
+Call build %Book%
 
 ::Call build name SongTi FontSize48
 ::Call build name QuanZiKuFont FontSize48
