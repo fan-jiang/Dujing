@@ -1,1 +1,4 @@
-..\opencc-0.4.2\opencc -i mencius.md -o mencius.simplified.md -c ..\opencc-0.4.2\zht2zhs.ini
+Set OpenCCFolder=..\opencc-0.4.2\
+Set Book=Mencius_
+Set BookExt=.md
+%OpenCCFolder%opencc -i %Book%Traditional%BookExt% -o %Book%Simplified%BookExt% -c %OpenCCFolde%zht2zhs.ini
