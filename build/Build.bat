@@ -13,8 +13,8 @@ Call GenerateBook ÃÏ×Ó >> %BuildLog%
 Call GenerateBook ÖÐÓ¹ >> %BuildLog%
 
 :: Clean up
-Del *.html
-Del %SourceFolder%*%S%%BookExt%
+:: Del *.html
+:: Del %SourceFolder%*%S%%BookExt%
 
 ::========================= Calculate build time
 
