@@ -18,4 +18,5 @@ Call GenerateBook ZhongYong
 ::Call build name JiaGuWen FontSize48
 ::Call build name JinWen FontSize96
 
-::Del *.html
+Del *.html
+Del %SourceFolder%*_Simplifed%BookExt%
