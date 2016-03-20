@@ -5,22 +5,18 @@ Set S=º†ów
 Set BuildLog=BuildLog.txt
 @echo Build begins at: %DATE% %TIME% > %BuildLog%
 Set STARTTIME=%TIME%
+
 :: Stop PDF reader
 TaskKill /f /im AcroRd32.exe
+
 Call GenerateBook ÃÏ×Ó >> %BuildLog%
 Call GenerateBook ÖÐÓ¹ >> %BuildLog%
-
-::Call build name SongTi FontSize48
-::Call build name QuanZiKuFont FontSize48
-::Call build name BeiShiDaFont FontSize48
-::Call build name JinWen FontSize48
-::Call build name LiShu FontSize48
-::Call build name JiaGuWen FontSize48
-::Call build name JinWen FontSize96
 
 :: Clean up
 Del *.html
 Del %SourceFolder%*%S%%BookExt%
+
+::========================= Calculate build time
 
 @echo off
 Set ENDTIME=%TIME%
@@ -51,10 +47,4 @@ echo          ---------------
 echo Duration : %DURATION% 
 
 @echo Build ends at: %DATE% %TIME% >> %BuildLog%
-
-
-
-
-
-
 
