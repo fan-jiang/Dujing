@@ -19,4 +19,4 @@ Call GenerateBook ZhongYong
 ::Call build name JinWen FontSize96
 
 Del *.html
-Del %SourceFolder%*_Simplifed%BookExt%
+Del %SourceFolder%*%S%%BookExt%

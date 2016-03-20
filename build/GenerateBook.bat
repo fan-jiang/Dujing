@@ -5,5 +5,6 @@ Set Book=%BookName%%T%
 Call Generate %Book%
 Set Book=%BookName%%S%
 Call Generate %Book%
-Set OutputFolder=ClassicBook\
+Set OutputFolder=..\ÖÐÎÄ½›µä\
+MkDir %OutputFolder%%1
 Move /Y %1_*.pdf %OutputFolder%%1
