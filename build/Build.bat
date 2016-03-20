@@ -4,11 +4,11 @@ TaskKill /f /im AcroRd32.exe
 Set OpenCCFolder=..\opencc-0.4.2\
 Set SourceFolder=..\Source\
 Set BookExt=.md
-Set T=Traditional
-Set S=Simplified
+Set T=Õýów
+Set S=º†ów
 
-Call GenerateBook Mencius
-Call GenerateBook ZhongYong
+Call GenerateBook ÃÏ×Ó
+Call GenerateBook ÖÐÓ¹
 
 ::Call build name SongTi FontSize48
 ::Call build name QuanZiKuFont FontSize48

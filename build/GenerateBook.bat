@@ -1,10 +1,17 @@
 Set BookName=%1_
 Set BookPath=%SourceFolder%%BookName%
 %OpenCCFolder%opencc -i %BookPath%%T%%BookExt% -o %BookPath%%S%%BookExt% -c %OpenCCFolde%zht2zhs.ini
+Set OutputFolder=..\中文經典\%1
+
 Set Book=%BookName%%T%
 Call Generate %Book%
+Set Destinaton=%OutputFolder%\%T%
+MkDir %Destinaton%
+Move /Y %1_*.pdf %Destinaton%
+
 Set Book=%BookName%%S%
 Call Generate %Book%
-Set OutputFolder=..\中文經典\
-MkDir %OutputFolder%%1
-Move /Y %1_*.pdf %OutputFolder%%1
+Set Destinaton=%OutputFolder%\%S%
+MkDir %Destinaton%
+Move /Y %1_*.pdf %Destinaton%
+
