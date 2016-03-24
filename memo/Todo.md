@@ -6,7 +6,10 @@
 	~~@echo Build began at: %DATE% %TIME% > %BuildSummary%~~
 	~~set BuildLog=Buildlog.txt~~
 	~~set BuildSummary=BuildSummary.txt~~
-- Generate Daxue
+- Decorate name does not work.
+- Remove Traditional suffix from the source name
+- Review Daxue
+- Generate DaXue
 - Add Preface
 - Add Cover Page
 - Use python script to iterate all the font size and font name.
