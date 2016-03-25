@@ -7,10 +7,11 @@ Call Generate %Book% name QuanZiKuFont FontSize48
 :: Call Generate %Book% name KaiTi FontSize48
 
 :: The following fonts generated incomplete text.
-:: Call Generate %Book% name BeiShiDaFont FontSize48
-:: Call Generate %Book% name JinWen FontSize48
-:: Call Generate %Book% name LiShu FontSize48
-:: Call Generate %Book% name JiaGuWen FontSize48
+REM Call Generate %Book% name BeiShiDaFont FontSize48
+REM Call Generate %Book% name JinWen FontSize48
+REM Call Generate %Book% name LiShu FontSize48
+REM Call Generate %Book% name JiaGuWen FontSize48
+
 Set Destinaton=%OutputFolder%\%1
 RmDir %Destinaton% /s /q
 MkDir %Destinaton%
