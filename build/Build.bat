@@ -1,7 +1,7 @@
 Set SourceFolder=..\Source\
 Set BookExt=.md
-Set T=Õýów
-Set S=º†ów
+Set T=Traditional
+Set S=Simplified
 Set BuildLog=BuildLog.txt
 @echo Build begins at: %DATE% %TIME% > %BuildLog%
 Set STARTTIME=%TIME%
@@ -9,8 +9,10 @@ Set STARTTIME=%TIME%
 :: Stop PDF reader
 TaskKill /f /im AcroRd32.exe
 
-Call GenerateBook ÃÏ×Ó >> %BuildLog%
-Call GenerateBook ÖÐÓ¹ >> %BuildLog%
+Call GenerateBook LunYu >> %BuildLog%
+Call GenerateBook MengZi >> %BuildLog%
+Call GenerateBook DaXue >> %BuildLog%
+Call GenerateBook ZhongYong >> %BuildLog%
 
 :: Clean up
 :: Del *.html
