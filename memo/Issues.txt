@@ -6,8 +6,5 @@ When a word document is saved as a pdf document (Ê¹ÓÃ½ðÎÄ×Öów•r), t
 
 - The [workaround](http://wordribbon.tips.net/T011430_Problems_Saving_as_PDF.html) does not work.
 
-## Some word could not be shown in simplied version
 
-孟子： *𫗦*啜, *𫛞*舌之人 *𫍙𫍙*
 
-中庸： *𫓧*钺
