@@ -22,6 +22,10 @@
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional
 
+# Conversion from traditional to simplied
+
+##　改變單引號和雙引號。
+
 
 ## Some word could not be shown in simplied version
 
@@ -32,6 +36,13 @@
 論語： 
 - 大车无􀀀，小车无􀀀，其何以行之哉
 - 袗􀀀绤，必表而出之。
+
+##　Ｓｏｍｅ　ｗｏｒｄｓ　ａｒｅ　ｎｏｔ　ｃｏｎｖｅｒｔｅｄ　ｃｏｒｒｅｃｔｌｙ
+孟子：
+將徹　－》將彻
+以旂　－》以旗
+關弓 -> 关
+遏糴 -》 籴
 
 # Installer
 - Markdown Edit includes Pandoc into packages.
