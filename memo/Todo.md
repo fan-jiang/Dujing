@@ -27,7 +27,7 @@
 ##　改變單引號和雙引號。
 
 
-## Some word could not be shown in simplied version
+## Some words could not be shown in simplified version
 
 孟子： *𫗦*啜, *𫛞*舌之人 *𫍙𫍙*
 
