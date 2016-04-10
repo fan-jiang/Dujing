@@ -43,7 +43,7 @@
 以旂　－》以旗
 關弓 -> 关
 遏糴 -》 籴
-
+徵招 -》征招
 # Installer
 - Markdown Edit includes Pandoc into packages.
 - Include htmltopdf software
