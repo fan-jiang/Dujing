@@ -1,4 +1,4 @@
-﻿<!--% 孟子
+<!--% 孟子
 % Prepared by Dujing Academy
 % @March 15, 2016-->
 
