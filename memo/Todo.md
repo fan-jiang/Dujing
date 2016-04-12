@@ -6,6 +6,7 @@
 	~~@echo Build began at: %DATE% %TIME% > %BuildSummary%~~
 	~~set BuildLog=Buildlog.txt~~
 	~~set BuildSummary=BuildSummary.txt~~
+- Convert Simplified version properly.	
 - Decorate name does not work.
 - If a generated PDF file is imported to Kindle device, Kindle device could only display first few pages. Starting from page 9-or page 10, the text is not displayed properly.
 - Use different page number for Table Of Content.
@@ -22,12 +23,12 @@
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional
 
-# Conversion from traditional to simplied
+# Conversion from traditional to simplified
 
-##　改變單引號和雙引號。
+- 改變簡體字的單引號和雙引號
 
 
-## Some words could not be shown in simplified version
+- Some words could not be shown in simplified version
 
 孟子： *𫗦*啜, *𫛞*舌之人 *𫍙𫍙*
 
@@ -37,13 +38,16 @@
 - 大车无􀀀，小车无􀀀，其何以行之哉
 - 袗􀀀绤，必表而出之。
 
-##　Ｓｏｍｅ　ｗｏｒｄｓ　ａｒｅ　ｎｏｔ　ｃｏｎｖｅｒｔｅｄ　ｃｏｒｒｅｃｔｌｙ
-孟子：
-將徹　－》將彻
-以旂　－》以旗
-關弓 -> 关
-遏糴 -》 籴
-徵招 -》征招
+- Some words are converted incorrectly.
+
+	孟子：
+	將徹　－》將彻
+	以旂　－》以旗
+	關弓 -> 关
+	遏糴 -》 籴
+	徵招 -》征招
+
+
 # Installer
 - Markdown Edit includes Pandoc into packages.
 - Include htmltopdf software
