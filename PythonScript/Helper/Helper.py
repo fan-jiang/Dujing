@@ -6,7 +6,9 @@ def Convert(content):
         u"」":u"”",
         u"『":u"‘",
         u"』":u"’",
-        "\uf0ab97a6":u"餔",
+        u"𫗦":u"餔",
+        u"𫛞":u"鴃",
+        u"𫍙":u"訑",
     }
     for key in tradtionalToSimplified: 
         content = content.replace(key, tradtionalToSimplified[key])

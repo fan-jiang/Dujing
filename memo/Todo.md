@@ -25,12 +25,7 @@
 
 # Conversion from traditional to simplified
 
-- 改變簡體字的單引號和雙引號
-
-
 - Some words could not be shown in simplified version
-
-孟子： *𫗦*啜, *𫛞*舌之人 *𫍙𫍙*
 
 中庸： *𫓧*钺
 
