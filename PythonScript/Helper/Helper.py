@@ -6,7 +6,7 @@ def Convert(content):
         u"」":u"”",
         u"『":u"‘",
         u"』":u"’",
-
+        "\uf0ab97a6":u"餔",
     }
     for key in tradtionalToSimplified: 
         content = content.replace(key, tradtionalToSimplified[key])
@@ -14,7 +14,7 @@ def Convert(content):
 
 def main():
     try:
-        fileName = "MengZi_Traditional - Test.md"
+        fileName = "Test_Simplified.md"
         filePath = "../../source/" + fileName
         content = None
         with open(filePath,'r') as file:
