@@ -24,15 +24,6 @@
 - Command line accept better format of option, for example, --FontType Traditional
 
 # Conversion from traditional to simplified
-
-- Some words could not be shown in simplified version
-
-中庸： *𫓧*钺
-
-論語： 
-- 大车无􀀀，小车无􀀀，其何以行之哉
-- 袗􀀀绤，必表而出之。
-
 - Some words are converted incorrectly.
 
 	孟子：

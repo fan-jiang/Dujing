@@ -2,13 +2,24 @@
 
 def Convert(content):
     tradtionalToSimplified = {
+# Simplified text has its own quotation marks.
         u"「":u"“", 
         u"」":u"”",
         u"『":u"‘",
         u"』":u"’",
+# OpenCC successfully converts the following characters to the simplified UTF-8 code.
+# However, they could not be shown in most of Chinese Font families.
+# Thus, the traditional characters are used.
+## Mengzi 
         u"𫗦":u"餔",
         u"𫛞":u"鴃",
         u"𫍙":u"訑",
+## Zhongyong
+        u"𫓧":u"鈇",
+## Lunyu
+        u"𫐐":u"輗",
+        u"𫐄":u"軏",
+        u"𫄨":u"絺",
     }
     for key in tradtionalToSimplified: 
         content = content.replace(key, tradtionalToSimplified[key])
