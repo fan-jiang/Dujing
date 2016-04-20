@@ -17,8 +17,8 @@
 - Add Preface
 - Add Cover Page
 - Use python script to iterate all the font size and font name.
-- Set up Git hub repository
-- Write copy right statement.
+~~- Set up Git hub repository~~
+~~- Write copy right statement.~~
 - Use the vertical format.
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional

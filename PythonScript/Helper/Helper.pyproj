@@ -12,6 +12,9 @@
     <OutputPath>.</OutputPath>
     <Name>Helper</Name>
     <RootNamespace>Helper</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>D:\Fan\_Personal\DujingSoftware\source\LunYu_Simplified.md </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +25,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Convert.py" />
     <Compile Include="Helper.py" />
     <Compile Include="testConvert.py">
       <SubType>Code</SubType>
