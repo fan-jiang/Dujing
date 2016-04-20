@@ -1,5 +1,7 @@
 # This Python file uses the following encoding: utf-8
 
+import sys
+
 def Convert(content):
     tradtionalToSimplified = {
 # Simplified text has its own quotation marks.
@@ -36,16 +38,14 @@ def Convert(content):
     return content
 
 def main():
-    try:
-        fileName = "Test_Simplified.md"
-        filePath = "../../source/" + fileName
+    try: 
+        filePath = sys.argv[1]
         content = None
         with open(filePath,'r') as file:
             content = file.read().decode("utf-8")
         content = Convert(content)
         with open(filePath,'w') as file:
             file.write(content.encode("utf-8"))
-        print "OK"
     except IOError:
         print ("IOError occurs while handling the file (" + filePath + ").")
 
