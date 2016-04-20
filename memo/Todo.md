@@ -23,16 +23,6 @@
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional
 
-# Conversion from traditional to simplified
-- Some words are converted incorrectly.
-
-	孟子：
-	將徹　－》將彻
-	以旂　－》以旗
-	關弓 -> 关
-	遏糴 -》 籴
-	徵招 -》征招
-
 
 # Installer
 - Markdown Edit includes Pandoc into packages.

@@ -20,6 +20,16 @@ def Convert(content):
         u"𫐐":u"輗",
         u"𫐄":u"軏",
         u"𫄨":u"絺",
+# The following words converted by OpenCC are correct, but
+# the conversion affects the syntax meaning.
+# The word should be modified.
+##　Mengzi
+        u"將彻":u"將徹",
+        u"以旗":u"以旂",
+        u"关弓":u"弯弓",
+        u"征招":u"徵招",
+        u"遏籴":u"遏糴",
+        u"逾":u"踰",
     }
     for key in tradtionalToSimplified: 
         content = content.replace(key, tradtionalToSimplified[key])
