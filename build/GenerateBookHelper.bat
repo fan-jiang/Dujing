@@ -14,6 +14,6 @@ REM Call Generate %Book% name LiShu FontSize48
 REM Call Generate %Book% name JiaGuWen FontSize48
 
 Set Destination=%OutputFolder%\%1
-RmDir %Destinaton% /s /q
-MkDir %Destinaton%
-Move /Y %Book%*.pdf %Destinaton%
+RmDir %Destination% /s /q
+MkDir %Destination%
+Move /Y %Book%*.pdf %Destination%
