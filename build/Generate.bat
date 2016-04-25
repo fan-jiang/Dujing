@@ -1,23 +1,27 @@
 Set DecorateName=DecorateName
 Set CSSExt=.css
 Set CSS_=--css=..\css\
-Set NameStyle=%CSS_%%DecorateName%%CSSExt%
 Set Style=%CSS_%Common%CSSExt%
 Set Output=%Book%
 
-If "%2" == "name" (
-	:: Set Output=%Output%_%DecorateName%
+Set FontFamily=%2
+If "%2" == "" (
+	Set FontFamily=KaiTi
+)
+Set Style=%Style% %CSS_%%FontFamily%%CSSExt%
+Set Output=%Output%_%FontFamily%
+
+Set FontSize=%3
+If "%FontSize%" == "" (
+	Set FontSize=FontSize48
+)
+Set Style=%Style% %CSS_%%FontSize%%CSSExt%
+Set Output=%Output%_%FontSize%
+
+Set NameStyle=%CSS_%%DecorateName%%CSSExt%
+If "%4" == "Name" (
+	Set Output=%Output%_%DecorateName%
 	Set Style=%Style% %NameStyle%
-)
-
-If Not "%3" == "" (
-	Set Output=%Output%_%3
-	Set Style=%Style% %CSS_%%3%CSSExt%
-)
-
-If Not "%4" == "" (
-	:: Set Output=%Output%_%4
-	Set Style=%Style% %CSS_%%4%CSSExt%
 )
 
 Set HTMLExt=.html

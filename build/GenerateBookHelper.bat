@@ -1,6 +1,8 @@
 Set Book=%BookName%%1
-Call Generate %Book% name SongTi FontSize48
-Call Generate %Book% name KaiTi FontSize48
+Call Generate %Book% KaiTi FontSize48 Name
+Call Generate %Book%
+Call Generate %Book% SongTi
+
 :: Call Generate %Book% name QuanZiKuFont FontSize48
 
 :: The following fonts generated unreadable characters.
