@@ -6,20 +6,23 @@
 	~~@echo Build began at: %DATE% %TIME% > %BuildSummary%~~
 	~~set BuildLog=Buildlog.txt~~
 	~~set BuildSummary=BuildSummary.txt~~
-- Convert Simplified version properly.	
+~~- Convert Simplified version properly.~~
 - Decorate name does not work.
+- Add Preface
+- Add Cover Page
+- Use the vertical format.
+- Use python script to iterate all the font size and font name.
+
+
+
 - If a generated PDF file is imported to Kindle device, Kindle device could only display first few pages. Starting from page 9-or page 10, the text is not displayed properly.
 - Use different page number for Table Of Content.
 - The Table of Content does not contain the chapter numbers in order to save the paper.
 - Remove Traditional suffix from the source name
-- Review Daxue
-- Generate DaXue
-- Add Preface
-- Add Cover Page
-- Use python script to iterate all the font size and font name.
+~~- Review Daxue~~
+~~- Generate DaXue~~
 ~~- Set up Git hub repository~~
 ~~- Write copy right statement.~~
-- Use the vertical format.
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional
 
