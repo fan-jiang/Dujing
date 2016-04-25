@@ -9,10 +9,10 @@ Set STARTTIME=%TIME%
 :: Stop PDF reader
 TaskKill /f /im AcroRd32.exe
 
-Call GenerateBook LunYu >> %BuildLog%
-Call GenerateBook MengZi >> %BuildLog%
 Call GenerateBook DaXue >> %BuildLog%
 Call GenerateBook ZhongYong >> %BuildLog%
+Call GenerateBook LunYu >> %BuildLog%
+Call GenerateBook MengZi >> %BuildLog%
 
 :: Clean up
 :: Del *.html
