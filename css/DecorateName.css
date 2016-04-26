@@ -1,25 +1,20 @@
-em
-{ 
-	/*
-	Person name
-	*/
-	font-style: italic;
-}
-
-strong
+/*
+em = emphasis = Person name
+strong = Dynasty name
+code = Place and country name. 
+*/
+em, strong, code
 {
-	/*
-	Dynasty name
-	*/
+	/* Override font-style, otherwise the default font-style will be used.
+		For example, em will use italic font-style.*/
+	font-style: normal;
 	text-decoration: underline;
-}  
+}
 
 code
 {
 	/*
-	Place and country name. Needs to override font size
-	Otherwise, code font will be very small.
+	Override font size; otherwise, default font-size for code is very small.
 	*/
 	font-size: 48px;
-	font-weight: bold;
 }
