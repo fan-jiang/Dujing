@@ -1,8 +1,3 @@
-/*
-em = emphasis = Person name
-strong = Dynasty name
-code = Place and country name. 
-*/
 em, strong, code
 {
 	/* Override font-style, otherwise the default font-style will be used.
@@ -11,14 +6,26 @@ em, strong, code
 	/* Stop using "text-decoration: underline;",
 	because the underline is very close to the corresponding text */
 	border-bottom-width: thin;
-	border-bottom-style: solid;
 	padding-bottom: 1px;
 }
 
-code
+em /* emphasis = Person name */
+{
+	border-bottom-style: solid;
+}
+
+strong /* Dynasty name */
+{
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+}
+
+code /*Place and country name*/
 {
 	/*
-	Override font size; otherwise, default font-size for code is very small.
+	Override font size; 
+	otherwise, default font-size for code is very small.
 	*/
 	font-size: 48px;
+	border-bottom-style: dashed;
 }
