@@ -29,6 +29,8 @@ tradtionalToSimplified = {
         u"征招":u"徵招",
         u"遏籴":u"遏糴",
         u"逾":u"踰",
+##　Lunyu
+　　　　u"後彫":u"后凋",
 }
 
 def Convert(content):
