@@ -30,7 +30,9 @@ tradtionalToSimplified = {
         u"遏籴":u"遏糴",
         u"逾":u"踰",
 ##　Lunyu
-        u"後彫":u"后凋",
+        u"后凋":u"后彫",
+## Daxue
+        u"恂栗":u"恂慄",
 }
 
 def Convert(content):
