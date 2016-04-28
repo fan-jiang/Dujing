@@ -1,5 +1,5 @@
 Set SourceFolder=..\Source\
-Set BookExt=.md
+Set BookExt=.txt
 Set T=Traditional
 Set S=Simplified
 Set BuildLog=BuildLog.txt
