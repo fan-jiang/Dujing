@@ -10,10 +10,10 @@
 ~~- Decorate name does not work.~~
 - Disable name text effect on non-decorateName file.
 - Show dynasty name with double underline
-- Include LiTao's feedback on DaXue and Zhongyong.
+~~- Include LiTao's feedback on DaXue and Zhongyong.~~
 - Use relative (percentage) for the underline border.
-- Write text review document.
-- Rename md file to txt file.
+~~- Write text review document.~~
+~~- Rename md file to txt file.~~
 - Add footnote on the text.
 - Add Preface
 - Add Cover Page
