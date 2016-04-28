@@ -7,14 +7,18 @@
 	~~set BuildLog=Buildlog.txt~~
 	~~set BuildSummary=BuildSummary.txt~~
 ~~- Convert Simplified version properly.~~
-- Decorate name does not work.
+~~- Decorate name does not work.~~
+- Disable name text effect on non-decorateName file.
+- Show dynasty name with double underline
+- Include LiTao's feedback on DaXue and Zhongyong.
+- Use relative (percentage) for the underline border.
+- Write text review document.
+- Rename md file to txt file.
+- Add footnote on the text.
 - Add Preface
 - Add Cover Page
 - Use the vertical format.
 - Use python script to iterate all the font size and font name.
-
-
-
 - If a generated PDF file is imported to Kindle device, Kindle device could only display first few pages. Starting from page 9-or page 10, the text is not displayed properly.
 - Use different page number for Table Of Content.
 - The Table of Content does not contain the chapter numbers in order to save the paper.
