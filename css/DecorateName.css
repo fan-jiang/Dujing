@@ -2,22 +2,23 @@ em, strong, code
 {
 	/* Do not use "text-decoration: underline;",
 	because the underline is very close to the corresponding text */
-	border-bottom-width: thin;
 	padding-bottom: 1px;
 }
 
 em /* emphasis = Person name */
 {
+	border-bottom-width: thin;
 	border-bottom-style: solid;
 }
 
 strong /* Dynasty name */
 {
-	border-bottom-style: solid;
-	border-bottom-color: gray;
+	border-bottom-width: medium;
+	border-bottom-style: double;
 }
 
 code /*Place and country name*/
 {
+	border-bottom-width: thin;
 	border-bottom-style: dashed;
 }
