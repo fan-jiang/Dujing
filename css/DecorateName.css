@@ -1,9 +1,6 @@
 em, strong, code
 {
-	/* Override font-style, otherwise the default font-style will be used.
-		For example, em will use italic font-style.*/
-	font-style: normal;
-	/* Stop using "text-decoration: underline;",
+	/* Do not use "text-decoration: underline;",
 	because the underline is very close to the corresponding text */
 	border-bottom-width: thin;
 	padding-bottom: 1px;

@@ -1,3 +1,10 @@
+em, strong, code
+{
+	/* Override font-style, otherwise the default font-style will be used.
+		For example, em will use italic font-style.*/
+	font-style: normal;
+}
+
 p
 {
 	line-height: 130%
