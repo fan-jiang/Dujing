@@ -1,5 +1,9 @@
-p
+p, code
 {
+	/*
+	Override font size for code;
+	otherwise, default font-size for code is very small.
+	*/
 	font-size:48px;
 }
 

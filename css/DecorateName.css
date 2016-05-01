@@ -22,10 +22,5 @@ strong /* Dynasty name */
 
 code /*Place and country name*/
 {
-	/*
-	Override font size; 
-	otherwise, default font-size for code is very small.
-	*/
-	font-size: 48px;
 	border-bottom-style: dashed;
 }
