@@ -14,15 +14,36 @@ The executables from the following softwares are used in this package:
 [2]: https://github.com/BYVoid/OpenCC
 [3]: https://github.com/wkhtmltopdf/wkhtmltopdf
 
-# How to build Dujing
+# How to build this software
 
-- Download `Pandoc` from [here](http://pandoc.org/installing.html).
-- Install `Pandoc` and it will be installed in  `C:\Users\[user name]\AppData\Local\Pandoc\`. Add the Pandoc folder to `Path` (an environment variable).
+## Installation
 
-- Download `OpenCC` from [here](https://bintray.com/byvoid/opencc/OpenCC). The current version is `opencc-1.0.4.tar.gz`.
-- Unzipp the above file under the root folder of Dujing.
+- Download the latest version of the following softwares.
+- Install them.
+- Add the folders which contain executable files (bin folder) to `Path` (an environment variable) by running the following command:
 
-- Download `wkhtmltopdf` from [here](http://wkhtmltopdf.org/downloads.html).
-- Install `wkhtmltopdf` and add `wkhtmltopdf` bin folder (C:\Program Files\wkhtmltopdf\bin) to `Path` (an environment variable).
+	set PATH=%PATH%;[Bin Folder]
 
-- Run `build\build.bat`. 
+### Pandoc
+
+- [Download Link](http://pandoc.org/installing.html ).
+- Bin folder: `C:\Users\[user name]\AppData\Local\Pandoc\`.
+
+### OpenCC
+
+- [Download Link] (https://bintray.com/byvoid/opencc/OpenCC ). The current version is `opencc-1.0.4.tar.gz`.
+- The release format is *.tar.gz. Unzipp this file to the root folder of Dujing.
+
+### wkhtmltopdf
+
+- [Download Link] (http://wkhtmltopdf.org/downloads.html ).
+- Bin folder: `C:\Program Files\wkhtmltopdf\bin`.
+
+### Python
+
+- [Download Link](https://www.python.org/downloads/ ).
+- Bin folder: `C:\Python27`
+
+## Build
+
+Generate the classic books by running `build\build.bat`.
