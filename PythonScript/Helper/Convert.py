@@ -35,6 +35,7 @@ tradtionalToSimplified = {
         u"恂栗":u"恂慄",
 ## Zhongyong
         u"半涂":u"半途",
+        u"复帱":u"覆帱",
 }
 
 def Convert(content):
