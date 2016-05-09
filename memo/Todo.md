@@ -14,19 +14,22 @@
 ~~- Use relative (percentage) for the underline border.~~
 ~~- Write text review document.~~
 ~~- Rename md file to txt file.~~
+~~- Review Daxue~~
+~~- Generate DaXue~~
+~~- Set up Git hub repository~~
+~~- Write copy right statement.~~
+
 - Add Preface
 - Add Cover Page
-- Use the vertical format.
 - Use python script to iterate all the font size and font name.
+
+## Not urgent:
+- Use the vertical format.
 - Add footnote on the text.
 - If a generated PDF file is imported to Kindle device, Kindle device could only display first few pages. Starting from page 9-or page 10, the text is not displayed properly.
 - Use different page number for Table Of Content.
 - The Table of Content does not contain the chapter numbers in order to save the paper.
 - Remove Traditional suffix from the source name
-~~- Review Daxue~~
-~~- Generate DaXue~~
-~~- Set up Git hub repository~~
-~~- Write copy right statement.~~
 - Add pronunciation for each word.
 - Command line accept better format of option, for example, --FontType Traditional
 
