@@ -22,8 +22,10 @@
 - Add Preface
 - Add Cover Page
 - Use python script to iterate all the font size and font name.
+- Move the conversion to a separate file.
 
 ## Not urgent:
+
 - Use the vertical format.
 - Add footnote on the text.
 - If a generated PDF file is imported to Kindle device, Kindle device could only display first few pages. Starting from page 9-or page 10, the text is not displayed properly.
