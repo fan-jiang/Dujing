@@ -18,8 +18,7 @@
 ~~- Generate DaXue~~
 ~~- Set up Git hub repository~~
 ~~- Write copy right statement.~~
-
-- Add Preface
+~~- Add Preface~~
 - Add Cover Page
 - Use python script to iterate all the font size and font name.
 - Move the conversion to a separate file.
