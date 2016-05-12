@@ -27,6 +27,15 @@ If "%4" == "Name" (
 Set HTMLExt=.html
 Set HTMLOutput=%Output%%HTMLExt%
 
+:: Generate cover.html
+Set Cover=Cover
+Set BookCover=%BookName%%Cover%
+Set BookCoverHTML=%BookCover%%HTMLExt%
+Call pandoc ..\source\%BookCover%%BookExt% -o %BookCoverHTML% --standalone %CSS_%%Cover%%CSSExt% --verbose
+
+:: Generate books with the html format
 Call pandoc ..\source\%Book%%BookExt% -o %HTMLOutput% --standalone %Style% --verbose
-Set PDF_Format=--margin-top 15 --header-spacing 5 --header-left [section] --header-right [subsection] --header-line --margin-bottom 15 --margin-left 25 --footer-spacing 5 --footer-left "Dujing Academy" --footer-right [page]/[topage] --footer-line --footer-font-size 5 toc
-Call wkhtmltopdf.exe %PDF_Format% %Preface%%HTMLExt% %HTMLOutput% %Output%.pdf
+
+:: Generate books with the pdf format
+Set PDF_Format=--margin-top 15 --header-spacing 5 --header-left [section] --header-right [subsection] --header-line --margin-bottom 15 --margin-left 25 --footer-spacing 5 --footer-left "Dujing Academy" --footer-right [page]/[topage] --footer-line --footer-font-size 5
+Call wkhtmltopdf.exe %PDF_Format% cover %BookCoverHTML% toc %Preface%%HTMLExt% %HTMLOutput% %Output%.pdf
