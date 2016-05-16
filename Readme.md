@@ -48,7 +48,7 @@ The executables from the following softwares are used in this package:
 
 Generate the classic books by running `build\build.bat`.
 
-##　Ｍｏｔｉｖａｔｉｏｎ
+## Motivation
 
 “Dujing Academy” 是Montreal時謙學堂在Quebec註冊的非盈利教育機構。她是時謙學堂對外的正式機構，同時為全球讀經教育的推廣盡一份綿薄之力。“Dujing Academy”在申請註冊時，表達了她的使命之一是：
 	
