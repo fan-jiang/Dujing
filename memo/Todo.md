@@ -20,6 +20,9 @@
 ~~- Write copy right statement.~~
 ~~- Add Preface~~
 ~~- Add Cover Page~~
+- ebook-convert could not load all css files.
+- Create HTML output with toc
+- Create txt output
 - Work on kindle generator
 - Modify preface
 - Support Chinese Characters
@@ -27,7 +30,8 @@
 - Use python script to include non repeat character tools.
 - Remove duplicated information related to the cover page.
 - Move the conversion to a separate file.
-
+- Create html output
+- Create word output
 ## Not urgent:
 
 - Use the vertical format.
