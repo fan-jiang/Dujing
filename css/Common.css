@@ -10,7 +10,7 @@ p
 	line-height: 130%
 }
 
-hr
+hr, div
 { 
 	page-break-after: always;
 }
