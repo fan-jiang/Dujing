@@ -20,6 +20,7 @@
 ~~- Write copy right statement.~~
 ~~- Add Preface~~
 ~~- Add Cover Page~~
+- Remove dependency on opencc
 - ebook-convert could not load all css files.
 - Create HTML output with toc
 - Create txt output
