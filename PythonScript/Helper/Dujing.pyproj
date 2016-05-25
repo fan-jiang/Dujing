@@ -4,13 +4,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ddbb7699-2f3e-4580-938a-08e5fd4ead61</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>Helper.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Dujing.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Helper</Name>
+    <Name>Dujing</Name>
     <RootNamespace>Helper</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments>D:\Fan\_Personal\DujingSoftware\source\LunYu_Simplified.md </CommandLineArguments>
@@ -26,7 +27,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Convert.py" />
-    <Compile Include="Helper.py" />
+    <Compile Include="Dujing.py" />
     <Compile Include="testConvert.py">
       <SubType>Code</SubType>
     </Compile>
