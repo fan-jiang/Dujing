@@ -3,11 +3,11 @@
 # Somehow, running this unit test in VS2015 is very slow (6 seconds).
 # It is much faster to use command line "python -m unittest discover ." to do unit test 
 import unittest
-import Helper
+import Dujing
 
 class TestConvert(unittest.TestCase):
     def test_Convert(self):
-        self.assertEquals(Helper.Convert(u"『"), u"‘");
+        self.assertEquals(Dujing.Convert(u"『"), u"‘");
 
 if __name__ == '__main__':
     unittest.main()

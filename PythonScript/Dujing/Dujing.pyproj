@@ -12,7 +12,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Dujing</Name>
-    <RootNamespace>Helper</RootNamespace>
+    <RootNamespace>Dujing</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments>D:\Fan\_Personal\DujingSoftware\source\LunYu_Simplified.md </CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
