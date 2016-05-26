@@ -22,10 +22,10 @@
 ~~- Add Cover Page~~
 - Remove dependency on opencc
 - ebook-convert could not load all css files.
-- Create HTML output with toc
+~~- Create HTML output with toc~~
 - Create txt output
 - Work on kindle generator
-- Modify preface
+~~- Modify preface~~
 - Support Chinese Characters
 - Use python script to iterate all the font size and font name.
 - Use python script to include non repeat character tools.
@@ -33,6 +33,7 @@
 - Move the conversion to a separate file.
 - Create html output
 - Create word output
+
 ## Not urgent:
 
 - Use the vertical format.
