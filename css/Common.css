@@ -11,6 +11,7 @@ sub
 	font-size:24px;
 	background-color: black;
 	color: white;
+	vertical-align: inherit; 
 }
 
 p
