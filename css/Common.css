@@ -8,10 +8,10 @@ em, strong, code
 sub
 {
 	/*subscript presentation*/
-	font-size:24px;
+	font-size: 24px;
 	background-color: black;
 	color: white;
-	vertical-align: inherit; 
+	vertical-align: baseline; 
 }
 
 p
