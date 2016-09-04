@@ -5,6 +5,14 @@ em, strong, code
 	font-style: normal;
 }
 
+sub
+{
+	/*subscript presentation*/
+	font-size:24px;
+	background-color: black;
+	color: white;
+}
+
 p
 {
 	line-height: 130%
