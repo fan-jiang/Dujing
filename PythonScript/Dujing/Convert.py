@@ -44,6 +44,8 @@ tradtionalToSimplified = {
 ## Zhongyong
         u"半涂":u"半途",
         u"复帱":u"覆帱",
+## Ignore un-needed subscripts
+        u"舍~舍~":u"舍",
 }
 
 def Convert(content):
