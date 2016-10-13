@@ -20,10 +20,12 @@
 ~~- Write copy right statement.~~
 ~~- Add Preface~~
 ~~- Add Cover Page~~
+~~- Comma in simplified version~~
+# - Implement RemoveRedundantSubscription
 - Add all word replacements in MengZi.
 - Remove dependency on opencc
 - ebook-convert could not load all css files.
-- remove chapit number in the table of content
+- remove chapter number in the table of content
 ~~- Create HTML output with toc~~
 - Create txt output
 - Work on kindle generator

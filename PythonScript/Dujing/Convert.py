@@ -2,7 +2,7 @@
 
 tradtionalToSimplified = {
 # Simplified text has its own quotation marks.
-        u"「":u"“", 
+        u"「":u"“",
         u"」":u"”",
         u"『":u"‘",
         u"』":u"’",
@@ -49,6 +49,9 @@ tradtionalToSimplified = {
 }
 
 def Convert(content):
-    for key in tradtionalToSimplified: 
+    for key in tradtionalToSimplified:
         content = content.replace(key, tradtionalToSimplified[key])
     return content
+
+def remove_redundant_subscript(content):
+    return u"舍"
