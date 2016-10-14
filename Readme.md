@@ -32,7 +32,7 @@ The executables from the following softwares are used in this package:
 ### OpenCC
 
 - [Download Link] (https://bintray.com/byvoid/opencc/OpenCC ). The current version is `opencc-1.0.4.tar.gz`.
-- The release format is *.tar.gz. Unzipp this file to the root folder of Dujing.
+- The release file extension is .tar.gz. Unzipp this file to the root folder of Dujing.
 
 ### wkhtmltopdf
 
@@ -41,9 +41,16 @@ The executables from the following softwares are used in this package:
 
 ### Python
 
-- [Download Link](https://www.python.org/downloads/ ).
+- [Download Link](https://www.python.org/downloads/)
 - Bin folder: `C:\Python27`
 
 ## Build
 
 Generate the classic books by running `build\build.bat`.
+
+## Release
+
+The generated books are available in the following links:
+
+- [堅果雲](https://www.jianguoyun.com/#tab=browse::id=c2afb2::magic=18268d1525b1e90f::path=/::)
+- [Google Drive](https://drive.google.com/drive/folders/0By077ki7vnOmR0NyUXpLLU0tekU?usp=sharing)
