@@ -54,4 +54,9 @@ def Convert(content):
     return content
 
 def remove_redundant_subscript(content):
-    return u"舍"
+    i = 0
+    while i < len(content) - 3:
+        if content[i+1] == '~' and content[i+3] == '~' and content[i] == content[i+2]:
+            content = content[:i+1] + content[i+4:]
+        i += 1
+    return content

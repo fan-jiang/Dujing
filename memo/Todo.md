@@ -21,7 +21,12 @@
 ~~- Add Preface~~
 ~~- Add Cover Page~~
 ~~- Comma in simplified version~~
-# - Implement RemoveRedundantSubscription
+- Implement RemoveRedundantSubscription
+	# - Support unicode
+	- simplify while loop
+	- call remove_redundant_subscript()
+	
+- Use python script to iterate all the font size and font name.
 - Add all word replacements in MengZi.
 - Remove dependency on opencc
 - ebook-convert could not load all css files.
@@ -31,7 +36,6 @@
 - Work on kindle generator
 ~~- Modify preface~~
 - Support Chinese Characters
-- Use python script to iterate all the font size and font name.
 - Use python script to include non repeat character tools.
 - Remove duplicated information related to the cover page.
 - Move the conversion to a separate file.
