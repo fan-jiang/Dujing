@@ -21,11 +21,10 @@
 ~~- Add Preface~~
 ~~- Add Cover Page~~
 ~~- Comma in simplified version~~
-- Implement RemoveRedundantSubscription
-	# - Support unicode
-	- simplify while loop
-	- call remove_redundant_subscript()
-	
+~~# - Implement RemoveRedundantSubscription~~
+	~~# - Support unicode~~
+	~~- call remove_redundant_subscript()~~
+
 - Use python script to iterate all the font size and font name.
 - Add all word replacements in MengZi.
 - Remove dependency on opencc
