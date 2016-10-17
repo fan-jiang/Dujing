@@ -6,7 +6,7 @@
     <ProjectGuid>ddbb7699-2f3e-4580-938a-08e5fd4ead61</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Dujing.py</StartupFile>
+    <StartupFile>ConvertFile.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Convert.py" />
-    <Compile Include="Dujing.py" />
+    <Compile Include="ConvertFile.py" />
     <Compile Include="testConvert.py">
       <SubType>Code</SubType>
     </Compile>
