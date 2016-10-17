@@ -1,0 +1,8 @@
+Call Sequence:
+
+Build.bat (`GenerateBook DaXue`)
+	-> GenerateBook (`GenerateBookHelper` Traditional and Simplified versions)
+		-> Dujing.py (Process simplified text)
+			Convert()
+	-> GenerateBookHelper (Generate book with format: `Generate %Book% KaiTi FontSize48 Name`)
+			-> Generate (Use pandoc to create book)
