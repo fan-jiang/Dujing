@@ -1,9 +1,0 @@
-- Run build.bat
-- Go to html file, manually insert:
-em { 
-    font-style: normal;
-
-}
-- Open html file with word.
-- Select all
-- choose font "È«×ÖŽìÕfÎÄ½â×Ö"
