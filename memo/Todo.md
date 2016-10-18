@@ -24,7 +24,9 @@
 ~~# - Implement RemoveRedundantSubscription~~
 	~~# - Support unicode~~
 	~~- call remove_redundant_subscript()~~
-
+- Replace batch file with python script
+	Replace generate.bat
+		Generate Cover
 - Use python script to iterate all the font size and font name.
 - Add all word replacements in MengZi.
 - Remove dependency on opencc

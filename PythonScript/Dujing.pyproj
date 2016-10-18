@@ -28,6 +28,9 @@
   <ItemGroup>
     <Compile Include="Convert.py" />
     <Compile Include="ConvertFile.py" />
+    <Compile Include="GenerateBook.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="testConvert.py">
       <SubType>Code</SubType>
     </Compile>
