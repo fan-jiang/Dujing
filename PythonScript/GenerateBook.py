@@ -1,10 +1,17 @@
-#Set Cover=Cover
-#Set BookCover=%BookName%%Cover%
-#Set BookCoverHTML=%BookCover%%HTMLExt%
-#Call pandoc ..\source\%BookCover%%BookExt% -o %BookCoverHTML% --standalone %CSS_%%Cover%%CSSExt% --verbose
-
+import subprocess
 def GenerateCover():
-	pass
+	Cover = "Cover"
+	BookName = "BookName"
+	BookCover = BookName + Cover
+	BookExt = "BookExt"
+	HTMLExt = "HTMLExt"
+	BookCoverHTML = BookCover + HTMLExt
+	CSS = "CSS_"
+	CSSExt = "CSSExt"
+
+	pandocCommand = "pandoc ..\\source\\" + BookCover + BookExt + " -o "
+	+ BookCoverHTML + " -standalone " + CSS_ + Cover + CSSExt + " --verbose"
+	subprocess.call(pandocCommand, stdout=FNULL, stderr=FNULL, shell=False)
 
 if __name__ == '__main__':
 	GenerateCover()
