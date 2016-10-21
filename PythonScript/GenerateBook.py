@@ -3,14 +3,12 @@ def GenerateCover():
 	Cover = "Cover"
 	BookName = "BookName"
 	BookCover = BookName + Cover
-	BookExt = "BookExt"
-	HTMLExt = "HTMLExt"
-	BookCoverHTML = BookCover + HTMLExt
+	BookCoverHTML = BookCover + ".html"
 	CSS = "CSS_"
 	CSSExt = "CSSExt"
 
-	pandocCommand = "pandoc ..\\source\\" + BookCover + BookExt + " -o "
-	+ BookCoverHTML + " -standalone " + CSS_ + Cover + CSSExt + " --verbose"
+	pandocCommand = "pandoc ..\\source\\" + BookCover + ".txt -o "
+	+ BookCoverHTML + " -standalone " + CSS_ + Cover + ".css --verbose"
 	subprocess.call(pandocCommand, stdout=FNULL, stderr=FNULL, shell=False)
 
 if __name__ == '__main__':
