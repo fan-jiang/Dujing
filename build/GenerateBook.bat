@@ -1,3 +1,7 @@
+Set SourceFolder=..\Source\
+Set BookExt=.txt
+Set T=Traditional
+Set S=Simplified
 Set BookName=%1_
 Set BookPath=%SourceFolder%%BookName%
 :: Generate the simplified source file

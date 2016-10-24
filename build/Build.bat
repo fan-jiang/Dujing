@@ -1,7 +1,4 @@
 Set SourceFolder=..\Source\
-Set BookExt=.txt
-Set T=Traditional
-Set S=Simplified
 Set BuildLog=BuildLog.txt
 @echo Build begins at: %DATE% %TIME% > %BuildLog%
 Set STARTTIME=%TIME%
