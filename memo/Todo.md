@@ -24,7 +24,7 @@
 ~~# - Implement RemoveRedundantSubscription~~
 	~~# - Support unicode~~
 	~~- call remove_redundant_subscript()~~
-- `太山` should be `太~泰~山`
+- `太山` should be `太~泰~山`; `大王`=`太王`
 - Replace batch file with python script
 	Replace generate.bat
 		Generate Cover
