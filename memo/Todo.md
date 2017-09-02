@@ -24,6 +24,8 @@
 ~~# - Implement RemoveRedundantSubscription~~
 	~~# - Support unicode~~
 	~~- call remove_redundant_subscript()~~
+- Replace OpenCC with the latest version 1.0.4 (how to build the source code under windows?)
+- Move the python script to 3.4
 - `太山` should be `太~泰~山`; `大王`=`太王` 簡 浚 二女果
 - Replace batch file with python script
 	Replace generate.bat
