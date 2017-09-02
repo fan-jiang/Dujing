@@ -31,8 +31,7 @@ The executables from the following softwares are used in this package:
 
 ### OpenCC
 
-- [Download Link] (https://bintray.com/byvoid/opencc/OpenCC ). The current version is `opencc-1.0.4.tar.gz`.
-- The release file extension is .tar.gz. Unzipp this file to the root folder of Dujing.
+- Unzipp `opencc-0.4.2.rar` to the root folder of Dujing.
 
 ### wkhtmltopdf
 
