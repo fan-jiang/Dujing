@@ -43,6 +43,11 @@ The executables from the following softwares are used in this package:
 - [Download Link](https://www.python.org/downloads/)
 - Bin folder: `C:\Python27`
 
+### eBook Converter
+
+- [Download Link](https://calibre-ebook.com/download_windows)
+- Bin folder: `C:\Program Files (x86)\Calibre2`
+
 ## Build
 
 Generate the classic books by running `build\build.bat`.

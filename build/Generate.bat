@@ -42,5 +42,5 @@ Call wkhtmltopdf.exe %PDF_Format% cover %BookCoverHTML% cover Preface%HTMLExt% %
 
 :: Generate a book with the mobi format (for the Kindle device)
 If "%4" == "Name" (
-Call "C:\Program Files\Calibre2\ebook-convert.exe" %HTMLOutput% %Book%.mobi
+Call ebook-convert.exe %HTMLOutput% %Book%.mobi
 )
