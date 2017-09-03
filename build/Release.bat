@@ -1,1 +1,1 @@
-XCopy /Y /S /C output "%USERPROFILE%\Google Drive\DujingAcademy\ClassicBook"
+XCopy /Y /S /C output "%USERPROFILE%\Google Drive\DujingAcademy\ClassicBook%1"
