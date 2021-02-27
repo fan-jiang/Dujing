@@ -1,5 +1,3 @@
-
-
 - IE can open ±±ŽŸ´ó×­ÎÄ£¬ use CreatePDF to convert it to PDF file.
 ```
   <style type="text/css">
