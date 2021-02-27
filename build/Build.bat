@@ -6,7 +6,7 @@ Set STARTTIME=%TIME%
 :: Stop PDF reader
 TaskKill /f /im AcroRd32.exe
 
-Call pandoc %SourceFolder%Preface.md -o Preface.html --standalone
+Call pandoc %SourceFolder%Preface.md -o Preface.html --standalone --verbose
 
 Call GenerateBook DaXue >> %BuildLog%
 Call GenerateBook ZhongYong >> %BuildLog%
