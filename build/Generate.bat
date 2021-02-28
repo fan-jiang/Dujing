@@ -31,16 +31,17 @@ Set HTMLOutput=%Output%%HTMLExt%
 Set Cover=Cover
 Set BookCover=%BookName%%Cover%
 Set BookCoverHTML=%BookCover%%HTMLExt%
-Call pandoc ..\source\%BookCover%%BookExt% -o %BookCoverHTML% --standalone %CSS_%%Cover%%CSSExt% --verbose
+Call pandoc ..\source\%BookCover%%BookExt% -o %BookCoverHTML% --standalone %CSS_%%Cover%%CSSExt% --verbose --metadata lang="CH"
 
 :: Generate a book with the html format
-Call pandoc ..\source\%Book%%BookExt% --toc -o %HTMLOutput% --standalone %Style% --verbose
+Call pandoc ..\source\%Book%%BookExt% --toc -o %HTMLOutput% --standalone %Style% --verbose --metadata lang="CH"
 
 :: Generate a book with the pdf format
 Set PDF_Format=--margin-top 15 --header-spacing 5 --header-left [section] --header-right [subsection] --header-line --margin-bottom 15 --margin-left 20 --margin-right 20 --footer-spacing 5 --footer-left "Dujing Academy" --footer-right [page]/[topage] --footer-line --footer-font-size 5
-Call wkhtmltopdf.exe %PDF_Format% cover %BookCoverHTML% cover Preface%HTMLExt% %HTMLOutput% %Output%.pdf
+Set accessCSS_In_HTML=--enable-local-file-access
+Call wkhtmltopdf.exe %accessCSS_In_HTML% %PDF_Format% cover %BookCoverHTML% cover Preface%HTMLExt% %HTMLOutput% %Output%.pdf
 
 :: Generate a book with the mobi format (for the Kindle device)
 If "%4" == "Name" (
-Call ebook-convert.exe %HTMLOutput% %Book%.mobi
+	Call ebook-convert.exe %HTMLOutput% %Book%.mobi
 )
