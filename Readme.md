@@ -46,7 +46,7 @@ The executables from the following softwares are used in this package:
 ### eBook Converter
 
 - [Download Link](https://calibre-ebook.com/download_windows)
-- Bin folder: `C:\Program Files (x86)\Calibre2`
+- Set the bin folder: `set PATH=%PATH%;"C:\Program Files (x86)\Calibre2"`.
 
 ## Build
 
