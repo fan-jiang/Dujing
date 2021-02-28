@@ -27,7 +27,7 @@ The executables from the following softwares are used in this package:
 ### Pandoc
 
 - [Download Link](http://pandoc.org/installing.html ).
-- Bin folder: `C:\Users\[user name]\AppData\Local\Pandoc\`.
+- Set the bin folder: `set PATH=%PATH%;"C:\Program Files\Pandoc"`.
 
 ### OpenCC
 
@@ -36,12 +36,12 @@ The executables from the following softwares are used in this package:
 ### wkhtmltopdf
 
 - [Download Link] (http://wkhtmltopdf.org/downloads.html ).
-- Bin folder: `C:\Program Files\wkhtmltopdf\bin`.
+- Set the bin folder: `set PATH=%PATH%;"C:\Program Files\wkhtmltopdf\bin"`.
 
 ### Python
 
 - [Download Link](https://www.python.org/downloads/)
-- Bin folder: `C:\Python27`
+- Set the bin folder: `set PATH=%PATH%;"Python27"`.
 
 ### eBook Converter
 
@@ -50,7 +50,7 @@ The executables from the following softwares are used in this package:
 
 ## Build
 
-Generate the classic books by running `build\build.bat`.
+Generate the classic books by going to `dujing\build` folder and run `build`.
 
 ## Release
 
