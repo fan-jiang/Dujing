@@ -8,6 +8,7 @@ em, strong, code
 sub
 {
 	/*subscript presentation*/
+	display: none;
 	font-size: 60%;
 	background-color: black;
 	color: white;

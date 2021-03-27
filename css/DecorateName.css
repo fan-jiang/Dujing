@@ -22,3 +22,14 @@ code /*Place and country name*/
 	border-bottom-width: thin;
 	border-bottom-style: dashed;
 }
+
+sub /*Alternative word*/
+{
+	/*subscript presentation*/
+	display: inline;
+	font-size: 60%;
+	background-color: black;
+	color: white;
+	position: relative;
+	bottom: 0.3em;
+}
