@@ -1,14 +1,14 @@
 # This Python file uses the following encoding: utf-8
 
-tradtionalToSimplified = {
-# Simplified text has its own quotation marks.
+charsAfterOpenCcConversion_To_CharsShownInSimplifiedText = {
+# Conversion for the quotation marks.
         u"「":u"“",
         u"」":u"”",
         u"『":u"‘",
         u"』":u"’",
 # OpenCC successfully converts the following characters to the simplified UTF-8 code.
-# However, they could not be shown in most of Chinese Font families.
-# Thus, the traditional characters are used.
+# However, these simplified characters could not be shown in most of Chinese Font families.
+# Thus, use the original traditional characters.
 ## Mengzi 
         u"𫗦":u"餔",
         u"𫛞":u"鴃",
@@ -19,9 +19,8 @@ tradtionalToSimplified = {
         u"𫐐":u"輗",
         u"𫐄":u"軏",
         u"𫄨":u"絺",
-# The following words converted by OpenCC are correct, but
-# the conversion affects the syntax meaning.
-# The word should be modified.
+# The following words converted by OpenCC could not reflect its original syntax meaning.
+# Thus, modify words properly.
 ##　Mengzi
         u"将彻":u"将徹",
         u"以旗":u"以旂",
@@ -47,10 +46,12 @@ tradtionalToSimplified = {
 }
 
 def Convert(content):
-    for key in tradtionalToSimplified:
-        content = content.replace(key, tradtionalToSimplified[key])
+    for key in charsAfterOpenCcConversion_To_CharsShownInSimplifiedText:
+        content = content.replace(key, charsAfterOpenCcConversion_To_CharsShownInSimplifiedText[key])
     return remove_redundant_subscript(content)
 
+## 一對通假字在正體字中可以不同，但在簡體字中是一個字。所以在簡體版中，通假字標註是原字。應該去除冗餘的通假標註。
+## 比如：舍~捨~。
 def remove_redundant_subscript(content):
     i = 0
     while i < len(content) - 3:
