@@ -17,7 +17,7 @@ class TestConvert(unittest.TestCase):
         self.assertEquals("b", Convert.remove_redundant_subscript("b~b~"))
         self.assertEquals("b~", Convert.remove_redundant_subscript("b~"))
         self.assertEquals("abc", Convert.remove_redundant_subscript("ab~b~c"))
-        self.assertEquals(Convert.Convert(u"舍~舍~"), u"舍")
+        self.assertEquals(u"舍", Convert.Convert(u"舍~舍~"))
 
 if __name__ == '__main__':
     unittest.main()
