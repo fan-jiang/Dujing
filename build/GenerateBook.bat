@@ -9,7 +9,7 @@ Set BookPath=%SourceFolder%%BookName%
 Set OpenCCFolder=..\opencc-0.4.2\
 Set SimplifiedText=%BookPath%%S%%BookExt%
 Call %OpenCCFolder%opencc -i %BookPath%%T%%BookExt% -o %SimplifiedText% -c %OpenCCFolder%zht2zhs.ini
-Call ..\PythonScript\ConvertSimplifedFile.py %SimplifiedText%
+Call ..\PythonScript\ConvertSimplifedFile.py %S% %SimplifiedText%
 
 :: Generate book
 Set OutputFolder=Output\%1
