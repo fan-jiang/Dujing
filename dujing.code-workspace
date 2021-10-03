@@ -6,6 +6,9 @@
 	],
 	"settings": {
 		"files.exclude": {
+			"Output": true,
+			"Dist": true,
+			"dist": true,
 			"**/*.html": true,
 			"**/*.pdf": true,
 			"**/SandBox/": true,
@@ -18,12 +21,11 @@
 			"**/desktop.ini": true,
 			"**/*.pyc": true,
 			"**/*.exe": true,
-			"Output": true,
-			"Dist": true,
-			"dist": true,
-			"**/BuildLog.txt": true,
 			"**/Output": true,
-			"**/dist/": true
+			"**/dist/": true,
+			"**/BuildLog.txt": true,
+			"PythonScript/__pycache__": true,
+			"中文經典": true
 		}
 	}
 }

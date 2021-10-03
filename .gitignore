@@ -13,3 +13,5 @@ desktop.ini
 Output
 dist/
 BuildLog.txt
+/PythonScript/__pycache__
+/中文經典
