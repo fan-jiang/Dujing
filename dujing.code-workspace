@@ -4,5 +4,26 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/*.html": true,
+			"**/*.pdf": true,
+			"**/SandBox/": true,
+			"**/opencc-0.4.2/": true,
+			"**/*.simplified.md": true,
+			"**/*Simplified.*": true,
+			"**/*簡體.md": true,
+			"**/*.mobi": true,
+			"**/Test*.*": true,
+			"**/desktop.ini": true,
+			"**/*.pyc": true,
+			"**/*.exe": true,
+			"Output": true,
+			"Dist": true,
+			"dist": true,
+			"**/BuildLog.txt": true,
+			"**/Output": true,
+			"**/dist/": true
+		}
+	}
 }

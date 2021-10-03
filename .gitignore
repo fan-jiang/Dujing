@@ -7,3 +7,9 @@ opencc-0.4.2/
 *簡體.md
 *.mobi
 Test*.*
+desktop.ini
+*.pyc
+*.exe
+Output
+dist/
+BuildLog.txt
