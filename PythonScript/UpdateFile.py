@@ -3,7 +3,7 @@
 import argparse
 import Convert
 
-def convert_simplified_file():
+def update_file():
 	parser = argparse.ArgumentParser(description='Generate a classic book with the desired format.')
 	parser.add_argument('sort', type=str, help='simplified or tranditional')
 	parser.add_argument('book', type=str, help='a book file')
@@ -24,4 +24,4 @@ def convert_simplified_file():
 		print ("IOError occurs while handling the file (" + filePath + ").")
 
 if __name__ == '__main__':
-	convert_simplified_file()
+	update_file()
