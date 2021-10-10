@@ -68,7 +68,6 @@ checkedToneChars = "入日"
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
 def decorate_checkedToneCharacter_with_superscript(content):
 	for c in content:
-		for x in checkedToneChars:
-			if c == x:
-				return '^' + c + '^'
+		if c in checkedToneChars:
+			return '^' + c + '^'
 	return content
