@@ -31,7 +31,7 @@
 			"autoClearConsole": true,
 			"commands": [
 				{
-					"match": ".*",
+					"match": "\\.py$",
 					"cmd": "cd ${workspaceFolder}\\PythonScript && python -m unittest discover . && git commit -am working || git reset --hard"
 				}
 			]
