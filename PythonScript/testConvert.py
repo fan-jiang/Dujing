@@ -17,10 +17,10 @@ class TestConvert(unittest.TestCase):
 		self.assertEqual("abc", Convert.remove_redundant_subscript("ab~b~c"))
 		self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
 	def test_add_superscript(self):
-		self.assertEqual("", Convert.decorate_checkedToneCharacter_with_superscript(""))
-		self.assertEqual(u"^入^", Convert.decorate_checkedToneCharacter_with_superscript(u"入"))
-		self.assertEqual(u"^入^^日^", Convert.decorate_checkedToneCharacter_with_superscript(u"入日"))
-		self.assertEqual(u"江^入^^日^", Convert.decorate_checkedToneCharacter_with_superscript(u"江入日"))
+		self.assertEqual("", Convert.wrap_checkedToneCharacter_with_superscript(""))
+		self.assertEqual(u"^入^", Convert.wrap_checkedToneCharacter_with_superscript(u"入"))
+		self.assertEqual(u"^入^^日^", Convert.wrap_checkedToneCharacter_with_superscript(u"入日"))
+		self.assertEqual(u"江^入^^日^", Convert.wrap_checkedToneCharacter_with_superscript(u"江入日"))
 
 if __name__ == '__main__':
 	unittest.main()

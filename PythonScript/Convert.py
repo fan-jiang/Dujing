@@ -67,8 +67,9 @@ checkedToneChars = u"入日"
 
 # 入聲字： 用`^^`標誌, 比如： ^曰^。This is interpreted by [pandoc subscription 
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
-def decorate_checkedToneCharacter_with_superscript(content):
+def wrap_checkedToneCharacter_with_superscript(content):
 	result = ""
+	superscriptCharInPandoc = '^'
 	for c in content:
 		result += '^' + c + '^' if c in checkedToneChars else c
 	return result
