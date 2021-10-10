@@ -65,6 +65,7 @@ def remove_redundant_subscript(content):
 def add_superscript(content):
     i = 0
     while i < len(content):
-        if content[i] == '入':
-            return '^入^'
+        if content[i] == u'入':
+            return u'^入^'
+        i += 1
     return content
