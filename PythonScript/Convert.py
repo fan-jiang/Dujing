@@ -62,6 +62,8 @@ def remove_redundant_subscript(content):
         i += 1
     return content
 
+# 入聲字： 用`^^`標誌, 比如： ^曰^。This is interpreted by [pandoc subscription 
+#　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
 def decorate_checkedToneCharacter_with_superscript(content):
     i = 0
     while i < len(content):
