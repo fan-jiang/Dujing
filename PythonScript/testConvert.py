@@ -17,7 +17,7 @@ class TestConvert(unittest.TestCase):
         self.assertEqual("abc", Convert.remove_redundant_subscript("ab~b~c"))
         self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
     def test_add_super_script(self):
-        self.assertEqual(True, True)
+        self.assertEqual("", Convert.remove_redundant_subscript(""))
 
 if __name__ == '__main__':
     unittest.main()
