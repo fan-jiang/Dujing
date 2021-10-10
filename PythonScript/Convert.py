@@ -61,3 +61,6 @@ def remove_redundant_subscript(content):
             content = content[:i+1] + content[i+4:]
         i += 1
     return content
+
+def add_super_script(content):
+    pass
