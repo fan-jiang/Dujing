@@ -62,5 +62,5 @@ def remove_redundant_subscript(content):
         i += 1
     return content
 
-def add_super_script(content):
+def add_superscript(content):
     return content
