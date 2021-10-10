@@ -71,5 +71,5 @@ def wrap_checkedToneCharacter_with_superscript(content):
 	result = ""
 	superscriptCharInPandoc = '^'
 	for c in content:
-		result += '^' + c + '^' if c in checkedToneChars else c
+		result += superscriptCharInPandoc + c + superscriptCharInPandoc if c in checkedToneChars else c
 	return result
