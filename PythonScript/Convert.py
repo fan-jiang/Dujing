@@ -62,7 +62,7 @@ def remove_redundant_subscript(content):
         i += 1
     return content
 
-def add_superscript(content):
+def decorate_checkedToneCharacter_with_superscript(content):
     i = 0
     while i < len(content):
         if content[i] == u'入':
