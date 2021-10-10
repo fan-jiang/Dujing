@@ -18,5 +18,6 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
     def add_super_script(self):
         pass
+
 if __name__ == '__main__':
     unittest.main()
