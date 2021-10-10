@@ -66,5 +66,5 @@ def add_superscript(content):
     i = 0
     while i < len(content):
         if content[i] == '入':
-            return '入'
+            return '^入^'
     return content
