@@ -26,6 +26,15 @@
 			"**/BuildLog.txt": true,
 			"PythonScript/__pycache__": true,
 			"中文經典": true
-		}
+		},
+		"emeraldwalk.runonsave": {
+			"autoClearConsole": true,
+			"commands": [
+				{
+					"match": ".*",
+					"cmd": "cd ${workspaceFolder}\\PythonScript && python -m unittest discover . && git commit -am WIP || git reset --hard"
+				}
+			]
+		} 
 	}
 }
