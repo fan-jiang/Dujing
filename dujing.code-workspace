@@ -32,7 +32,7 @@
 			"commands": [
 				{
 					"match": ".*",
-					"cmd": "cd ${workspaceFolder}\\PythonScript && python -m unittest discover . && git commit -am WIP || git reset --hard"
+					"cmd": "cd ${workspaceFolder}\\PythonScript && python -m unittest discover . && git commit -am working || git reset --hard"
 				}
 			]
 		} 
