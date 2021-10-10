@@ -63,4 +63,4 @@ def remove_redundant_subscript(content):
     return content
 
 def add_super_script(content):
-    pass
+    return content
