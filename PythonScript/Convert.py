@@ -69,8 +69,5 @@ checkedToneChars = u"入日"
 def decorate_checkedToneCharacter_with_superscript(content):
 	result = ""
 	for c in content:
-		if c in checkedToneChars:
-			result += '^' + c + '^'
-		else:
-			result += c
+		result += '^' + c + '^' if c in checkedToneChars else c
 	return result
