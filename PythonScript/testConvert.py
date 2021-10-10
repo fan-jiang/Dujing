@@ -20,6 +20,5 @@ class TestConvert(unittest.TestCase):
         self.assertEqual("", Convert.decorate_checkedToneCharacter_with_superscript(""))
         self.assertEqual(u"^入^", Convert.decorate_checkedToneCharacter_with_superscript(u"入"))
 
-
 if __name__ == '__main__':
     unittest.main()
