@@ -1,5 +1,5 @@
 # This Python file uses the following encoding: utf-8
-import CheckedToneChars
+from CheckedToneChars import checkedToneChars
 charsAfterOpenCcConversion_To_CharsShownInSimplifiedText = {
 # Conversion for the quotation marks.
 		u"「":u"“",
