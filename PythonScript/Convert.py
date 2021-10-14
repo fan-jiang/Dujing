@@ -2,7 +2,7 @@
 
 from CheckedToneChars import checkedToneChars
 
-charAfterOpenCcConversion_To_CharShownInSimplifiedText = {
+charAfterOpenCcConversion_to_CharShownInSimplifiedText = {
     # Conversion for the quotation marks.
     u"「": u"“",
     u"」": u"”",
@@ -49,9 +49,9 @@ charAfterOpenCcConversion_To_CharShownInSimplifiedText = {
 
 
 def Convert(content):
-    for key in charAfterOpenCcConversion_To_CharShownInSimplifiedText:
+    for key in charAfterOpenCcConversion_to_CharShownInSimplifiedText:
         content = content.replace(
-            key, charAfterOpenCcConversion_To_CharShownInSimplifiedText[key])
+            key, charAfterOpenCcConversion_to_CharShownInSimplifiedText[key])
     return remove_redundant_subscript(content)
 
 # 一對通假字在正體字中可以不同，但在簡體字中是一個字。所以在簡體版中，通假字標註是原字。應該去除冗餘的通假標註。
