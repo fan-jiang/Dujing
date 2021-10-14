@@ -63,7 +63,7 @@ def remove_redundant_subscript(content):
 	return content
 
 # Todo: Complete this list in a different file.
-checkedToneChars = u"入日"
+# checkedToneChars = u"入日"
 
 # 入聲字： 用`^^`標誌, 比如： ^曰^。This is interpreted by [pandoc subscription 
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
