@@ -34,7 +34,7 @@ sub /*Alternative word*/
 	bottom: 0.3em;
 }
 
-sup /*superscript:Checked tone characters 入聲字*/
+sup /*superscript: Checked tone characters ^^入聲字*/
 {
 	/*Add dot for each character by using text-emphasis: see https://stackoverflow.com/a/27473185*/
 	text-emphasis-style: dot;
@@ -42,7 +42,7 @@ sup /*superscript:Checked tone characters 入聲字*/
 	-webkit-text-emphasis-style: dot;
 	-webkit-text-emphasis-position: under;
 
-	/*Override the default superscript font size (might be 70%) and vertical alignment (sup)*/
+	/*Override the default superscript style: font size (might be 70%) and vertical alignment (sup)*/
 	font-size: 100%;
 	vertical-align: top;
 }
