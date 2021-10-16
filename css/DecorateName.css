@@ -33,3 +33,12 @@ sub /*Alternative word*/
 	position: relative;
 	bottom: 0.3em;
 }
+
+sup /*Checked tone characters 入聲字*/
+{
+	/*superscript presentation*/
+	text-emphasis-style: dot;
+	text-emphasis-position: under left;
+	-webkit-text-emphasis-style: dot;
+	-webkit-text-emphasis-position: under;
+}
