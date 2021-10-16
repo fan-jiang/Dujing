@@ -13,6 +13,9 @@ Call GenerateBook ZhongYong >> %BuildLog%
 Call GenerateBook LunYu >> %BuildLog%
 Call GenerateBook MengZi >> %BuildLog%
 
+:: Restore source file to the original text.
+git reset --hard
+
 :: Clean up
 :: Del *.html
 :: Del %SourceFolder%*%S%%BookExt%
