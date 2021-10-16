@@ -7,13 +7,14 @@ em, strong, code
 
 sub
 {
-	/*subscript presentation*/
 	display: none;
-	font-size: 60%;
-	background-color: black;
-	color: white;
-	position: relative;
-	bottom: 0.3em;
+}
+
+sup /*superscript: Checked tone characters ^^入聲字*/
+{
+	/*Override the default superscript style: font size (might be 70%) and vertical alignment (sup)*/
+	font-size: 100%;
+	vertical-align: top;
 }
 
 p

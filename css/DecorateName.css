@@ -44,8 +44,4 @@ sup /*superscript: Checked tone characters ^^入聲字*/
 	-webkit-text-emphasis-style: dot;
 	-webkit-text-emphasis-position: under;
 	-webkit-text-emphasis-color: gray;
-
-	/*Override the default superscript style: font size (might be 70%) and vertical alignment (sup)*/
-	font-size: 100%;
-	vertical-align: top;
 }
