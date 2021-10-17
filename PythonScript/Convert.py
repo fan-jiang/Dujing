@@ -70,13 +70,23 @@ def remove_redundant_subscript(content):
 
 # 入聲字： 用`^^`標誌, 比如： ^曰^。This is interpreted by [pandoc subscription
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
+# Todo:
+# check boundary
+# move constant to global.
 
 
 def wrap_checkedToneChar_with_superscript(content):
     result = ""
     superscriptSignInPandoc = '^'
+    l = len(content)
     for i, c in enumerate(content):
         if c in checkedToneChars:
+            # if i > 0 and content[i - 1] == '~'
+            # if i < (l - 1) and content[i + 1] == '~':
+            #     result += c
+            if c == '屋':
+                result += c
+                continue
             result += superscriptSignInPandoc + c + superscriptSignInPandoc
         else:
             result += c
