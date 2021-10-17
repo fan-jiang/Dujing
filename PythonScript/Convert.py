@@ -103,5 +103,6 @@ def is_alternative_char(content, i):
     return wrapped_with_pandoc_subscript_sign
 
 
-class ancient_char:
-    pass
+class AncientChar:
+    def __init__(self, c):
+        self.c = c
