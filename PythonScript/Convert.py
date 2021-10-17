@@ -113,3 +113,7 @@ class AncientChar:
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
             len(self.book) - self.index) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
+
+
+class CheckedToneMarker:
+    pass
