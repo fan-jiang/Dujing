@@ -98,6 +98,6 @@ def is_checked_tone_char(c):
 
 
 def is_alternative_char(content, i):
-    is_subscript = i > 0 and content[i - 1] == '~' and i < (
+    wrapped_with_pandoc_subscript_sign = i > 0 and content[i - 1] == '~' and i < (
         len(content) - 1) and content[i + 1] == '~'
-    return is_subscript
+    return wrapped_with_pandoc_subscript_sign
