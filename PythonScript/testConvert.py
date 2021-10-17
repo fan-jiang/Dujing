@@ -28,6 +28,9 @@ class TestConvert(unittest.TestCase):
             u"^入^^日^", Convert.wrap_checkedToneChar_with_superscript(u"入日"))
         self.assertEqual(
             u"江^入^^日^", Convert.wrap_checkedToneChar_with_superscript(u"江入日"))
+        # self.assertEqual(
+        #     u"江入^日^", Convert.wrap_checkedToneChar_with_superscript(u"江~入~日"),
+        #     "do not mark checked tone if char is an alternative word")
 
 
 if __name__ == '__main__':
