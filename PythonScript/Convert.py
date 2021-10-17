@@ -107,3 +107,6 @@ def is_alternative_char(content, i):
 class AncientChar:
     def __init__(self, c):
         self.c = c
+
+    def is_checked_tone_char(self):
+        return self.c in checkedToneChars
