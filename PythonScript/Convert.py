@@ -75,7 +75,7 @@ def remove_redundant_subscript(content):
 # move constant to global.
 
 
-def wrap_checked_tone_char_with_superscript_sign(content):
+def mark_checked_tone_chars(content):
     result = ""
     for i, c in enumerate(content):
         if is_checked_tone_char(c) and not is_alternative_char(content, i):

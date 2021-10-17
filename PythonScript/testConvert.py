@@ -22,15 +22,15 @@ class TestConvert(unittest.TestCase):
 
     def test_add_superscript(self):
         self.assertEqual(
-            "", Convert.wrap_checked_tone_char_with_superscript_sign(""))
+            "", Convert.mark_checked_tone_chars(""))
         self.assertEqual(
-            u"^入^", Convert.wrap_checked_tone_char_with_superscript_sign(u"入"))
+            u"^入^", Convert.mark_checked_tone_chars(u"入"))
         self.assertEqual(
-            u"^入^^日^", Convert.wrap_checked_tone_char_with_superscript_sign(u"入日"))
+            u"^入^^日^", Convert.mark_checked_tone_chars(u"入日"))
         self.assertEqual(
-            u"江^入^^日^", Convert.wrap_checked_tone_char_with_superscript_sign(u"江入日"))
+            u"江^入^^日^", Convert.mark_checked_tone_chars(u"江入日"))
         self.assertEqual(
-            u"江~屋~^日^", Convert.wrap_checked_tone_char_with_superscript_sign(
+            u"江~屋~^日^", Convert.mark_checked_tone_chars(
                 u"江~屋~日"),
             "do not mark checked tone if char is an alternative word")
 
