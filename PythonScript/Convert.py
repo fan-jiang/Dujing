@@ -79,7 +79,7 @@ def wrap_checkedToneChar_with_superscript(content):
     result = ""
     superscriptSignInPandoc = '^'
     for i, c in enumerate(content):
-        if c in checkedToneChars:
+        if is_checked_tone_char(c):
             if is_wrapped_with_subscript_sign(content, i):
                 result += c
                 continue
@@ -87,6 +87,10 @@ def wrap_checkedToneChar_with_superscript(content):
         else:
             result += c
     return result
+
+
+def is_checked_tone_char(c):
+    return c in checkedToneChars
 
 
 def is_wrapped_with_subscript_sign(content, i):
