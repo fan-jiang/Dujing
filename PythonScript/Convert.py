@@ -83,7 +83,7 @@ def mark_checked_tone_chars(content):
 
 
 def mark_checked_tone_char(content, i, c):
-    if is_checked_tone_char(c) and not is_alternative_char(content, i):
+    if is_checked_tone_char(content[i]) and not is_alternative_char(content, i):
         return wrap_with_pandoc_superscript_sign(c)
     return c
 
