@@ -77,16 +77,16 @@ def remove_redundant_subscript(content):
 
 def wrap_checked_tone_char_with_superscript_sign(content):
     result = ""
-    superscriptSignInPandoc = '^'
     for i, c in enumerate(content):
         if is_checked_tone_char(c) and not is_alternative_char(content, i):
-            result += wrap_with_superscript_sign(superscriptSignInPandoc, c)
+            result += wrap_with_superscript_sign(c)
         else:
             result += c
     return result
 
 
-def wrap_with_superscript_sign(superscriptSignInPandoc, c):
+def wrap_with_superscript_sign(c):
+    superscriptSignInPandoc = '^'
     return superscriptSignInPandoc + c + superscriptSignInPandoc
 
 
