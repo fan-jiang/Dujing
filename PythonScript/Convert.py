@@ -75,7 +75,7 @@ def remove_redundant_subscript(content):
 # move constant to global.
 
 
-def wrap_checkedToneChar_with_superscript(content):
+def wrap_checked_tone_char_with_superscript_sign(content):
     result = ""
     superscriptSignInPandoc = '^'
     for i, c in enumerate(content):

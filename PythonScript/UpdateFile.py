@@ -19,7 +19,8 @@ def update_file():
         if sort == 'Simplified':
             content = Convert.Convert(content)
         else:
-            content = Convert.wrap_checkedToneChar_with_superscript(content)
+            content = Convert.wrap_checked_tone_char_with_superscript_sign(
+                content)
         with open(filePath, 'w') as file:
             file.write(content.encode("utf-8"))
     except IOError:
