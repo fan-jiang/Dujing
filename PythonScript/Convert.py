@@ -78,10 +78,9 @@ def remove_redundant_subscript(content):
 def wrap_checkedToneChar_with_superscript(content):
     result = ""
     superscriptSignInPandoc = '^'
-    l = len(content)
     for i, c in enumerate(content):
         if c in checkedToneChars:
-            if is_wrapped_with_subscript_sign(content, l, i):
+            if is_wrapped_with_subscript_sign(content, i):
                 result += c
                 continue
             result += superscriptSignInPandoc + c + superscriptSignInPandoc
@@ -90,5 +89,5 @@ def wrap_checkedToneChar_with_superscript(content):
     return result
 
 
-def is_wrapped_with_subscript_sign(content, l, i):
-    return i > 0 and content[i - 1] == '~' and i < (l - 1) and content[i + 1] == '~'
+def is_wrapped_with_subscript_sign(content, i):
+    return i > 0 and content[i - 1] == '~' and i < (len(content) - 1) and content[i + 1] == '~'
