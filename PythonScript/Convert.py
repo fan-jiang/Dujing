@@ -85,7 +85,7 @@ def mark_checked_tone_chars(book):
 def mark_checked_tone_char(book, index):
     c = book[index]
     ac = AncientChar(book, index, c)
-    if ac.is_checked_tone_char() and not is_alternative_char(book, index):
+    if ac.is_checked_tone_char() and not ac.is_alternative_char():
         return mark_char_as_superscript(c)
     return c
 
@@ -109,7 +109,7 @@ class AncientChar:
     def is_checked_tone_char(self):
         return self.c in checkedToneChars
 
-    def is_alternative_char(book, index):
-        wrapped_with_pandoc_subscript_sign = index > 0 and book[index - 1] == '~' and index < (
-            len(book) - index) and book[index + 1] == '~'
+    def is_alternative_char(self):
+        wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
+            len(self.book) - self.index) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
