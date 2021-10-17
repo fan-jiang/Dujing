@@ -84,7 +84,7 @@ def mark_checked_tone_chars(content):
 
 def mark_checked_tone_char(content, i):
     c = content[i]
-    ac = AncientChar(content[i])
+    ac = AncientChar(c)
     if is_checked_tone_char(c) and not is_alternative_char(content, i):
         return mark_char_as_superscript(c)
     return c
