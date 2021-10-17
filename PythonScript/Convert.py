@@ -94,4 +94,6 @@ def is_checked_tone_char(c):
 
 
 def is_alternative_char(content, i):
-    return i > 0 and content[i - 1] == '~' and i < (len(content) - 1) and content[i + 1] == '~'
+    is_subscript = i > 0 and content[i - 1] == '~' and i < (
+        len(content) - 1) and content[i + 1] == '~'
+    return is_subscript
