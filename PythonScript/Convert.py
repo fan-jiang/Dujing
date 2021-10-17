@@ -77,7 +77,7 @@ def remove_redundant_subscript(content):
 
 def mark_checked_tone_chars(content):
     result = ""
-    for i, c in enumerate(content):
+    for i, _ in enumerate(content):
         result += mark_checked_tone_char(content, i)
     return result
 
