@@ -80,10 +80,14 @@ def wrap_checked_tone_char_with_superscript_sign(content):
     superscriptSignInPandoc = '^'
     for i, c in enumerate(content):
         if is_checked_tone_char(c) and not is_alternative_char(content, i):
-            result += superscriptSignInPandoc + c + superscriptSignInPandoc
+            result += wrap_with_superscript_sign(superscriptSignInPandoc, c)
         else:
             result += c
     return result
+
+
+def wrap_with_superscript_sign(superscriptSignInPandoc, c):
+    return superscriptSignInPandoc + c + superscriptSignInPandoc
 
 
 def is_checked_tone_char(c):
