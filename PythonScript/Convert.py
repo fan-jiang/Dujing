@@ -78,11 +78,11 @@ def remove_redundant_subscript(content):
 def mark_checked_tone_chars(content):
     result = ""
     for i, c in enumerate(content):
-        result += mark_checked_tone_char(content, result, i, c)
+        result += mark_checked_tone_char(content, i, c)
     return result
 
 
-def mark_checked_tone_char(content, result, i, c):
+def mark_checked_tone_char(content, i, c):
     if is_checked_tone_char(c) and not is_alternative_char(content, i):
         return wrap_with_pandoc_superscript_sign(c)
     else:
