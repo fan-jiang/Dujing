@@ -81,10 +81,7 @@ def wrap_checkedToneChar_with_superscript(content):
     l = len(content)
     for i, c in enumerate(content):
         if c in checkedToneChars:
-            # if i > 0 and content[i - 1] == '~'
-            # if i < (l - 1) and content[i + 1] == '~':
-            #     result += c
-            if c == '屋':
+            if i > 0 and content[i - 1] == '~' and i < (l - 1) and content[i + 1] == '~':
                 result += c
                 continue
             result += superscriptSignInPandoc + c + superscriptSignInPandoc
