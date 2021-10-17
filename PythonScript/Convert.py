@@ -75,10 +75,10 @@ def remove_redundant_subscript(content):
 # move constant to global.
 
 
-def mark_checked_tone_chars(content):
+def mark_checked_tone_chars(book):
     result = ""
-    for i, _ in enumerate(content):
-        result += mark_checked_tone_char(content, i)
+    for i, _ in enumerate(book):
+        result += mark_checked_tone_char(book, i)
     return result
 
 
