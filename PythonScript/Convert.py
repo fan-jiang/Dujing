@@ -94,10 +94,6 @@ def mark_char_as_superscript(c):
     return '^' + c + '^'
 
 
-def is_checked_tone_char(c):
-    return c in checkedToneChars
-
-
 def is_alternative_char(content, i):
     wrapped_with_pandoc_subscript_sign = i > 0 and content[i - 1] == '~' and i < (
         len(content) - 1) and content[i + 1] == '~'
