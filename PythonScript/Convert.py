@@ -82,10 +82,10 @@ def mark_checked_tone_chars(book):
     return result
 
 
-def mark_checked_tone_char(content, i):
-    c = content[i]
+def mark_checked_tone_char(book, i):
+    c = book[i]
     ac = AncientChar(c)
-    if ac.is_checked_tone_char() and not is_alternative_char(content, i):
+    if ac.is_checked_tone_char() and not is_alternative_char(book, i):
         return mark_char_as_superscript(c)
     return c
 
