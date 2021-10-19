@@ -70,9 +70,6 @@ def remove_redundant_subscript(content):
 
 # 入聲字： 用`^^`標誌, 比如： ^曰^。This is interpreted by [pandoc subscription
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
-# Todo:
-# check boundary
-# move constant to global.
 
 
 def mark_checked_tone_chars(book):
