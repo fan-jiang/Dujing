@@ -114,6 +114,9 @@ class AncientChar:
             len(self.book) - self.index) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
 
+    def to_superscript(self):
+        return '^' + c + '^'
+
 
 class CheckedToneChar(AncientChar):
     def __init__(self, c):
