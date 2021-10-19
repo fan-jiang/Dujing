@@ -90,6 +90,7 @@ class CheckedToneMarker:
         for index, _ in enumerate(self.book):
             result += CheckedToneMarker(self.book,
                                         index).mark_checked_tone_char()
+            self.c = self.book[index]
         return result
 
     def mark_checked_tone_char(self):
