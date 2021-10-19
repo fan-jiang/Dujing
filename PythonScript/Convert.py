@@ -95,6 +95,11 @@ class AncientChar:
         self.book = book
         self.index = index
 
+    def mark_checked_tone_char(self):
+        if self.is_checked_tone_char() and not self.is_alternative_char():
+            return self.to_superscript()
+        return self.c
+
     def is_checked_tone_char(self):
         return self.c in checkedToneChars
 
