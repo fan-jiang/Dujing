@@ -115,7 +115,7 @@ class AncientChar:
         return wrapped_with_pandoc_subscript_sign
 
     def to_superscript(self):
-        return '^' + c + '^'
+        return '^' + self.c + '^'
 
 
 class CheckedToneChar(AncientChar):
