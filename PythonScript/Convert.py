@@ -90,12 +90,6 @@ def mark_checked_tone_char(book, index):
     return c
 
 
-def is_alternative_char(content, i):
-    wrapped_with_pandoc_subscript_sign = i > 0 and content[i - 1] == '~' and i < (
-        len(content) - 1) and content[i + 1] == '~'
-    return wrapped_with_pandoc_subscript_sign
-
-
 class AncientChar:
     def __init__(self, book, index):
         self.c = book[index]
