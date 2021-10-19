@@ -75,15 +75,22 @@ def remove_redundant_subscript(content):
 def mark_checked_tone_chars(book):
     result = ""
     for index, _ in enumerate(book):
-        result += AncientChar(book, index).mark_checked_tone_char()
+        result += CheckedToneMarker(book, index).mark_checked_tone_char()
     return result
 
 
-class AncientChar:
+class CheckedToneMarker:
     def __init__(self, book, index):
         self.c = book[index]
         self.book = book
         self.index = index
+
+        def mark_checked_tone_chars(book):
+            result = ""
+            for index, _ in enumerate(book):
+                result += CheckedToneMarker(book,
+                                            index).mark_checked_tone_char()
+            return result
 
     def mark_checked_tone_char(self):
         if self.is_checked_tone_char() and not self.is_alternative_char():
@@ -102,6 +109,6 @@ class AncientChar:
         return '^' + self.c + '^'
 
 
-class CheckedToneChar(AncientChar):
+class CheckedToneChar(CheckedToneMarker):
     def __init__(self, c):
         self.c = c
