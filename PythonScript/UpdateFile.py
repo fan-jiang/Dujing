@@ -13,16 +13,16 @@ def update_file():
     filePath = args.book
     sort = args.sort
     try:
-        content = None
+        book = None
         with open(filePath, 'r') as file:
-            content = file.read().decode("utf-8")
+            book = file.read().decode("utf-8")
         if sort == 'Simplified':
-            content = Convert.Convert(content)
+            book = Convert.Convert(book)
         else:
-            content = Convert.mark_checked_tone_chars(
-                content)
+            book = Convert.mark_checked_tone_chars(
+                book)
         with open(filePath, 'w') as file:
-            file.write(content.encode("utf-8"))
+            file.write(book.encode("utf-8"))
     except IOError:
         print("IOError occurs while handling the file (" + filePath + ").")
 
