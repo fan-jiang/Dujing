@@ -15,10 +15,11 @@ class TestConvert(unittest.TestCase):
         self.assertEqual("b", Convert.Convert("b~b~"))
 
     def test_remove_redundant_subscript(self):
-        self.assertEqual("", Convert.remove_redundant_subscript(""))
+        self.assertEqual("", Convert.remove_redundant_subscript_signs(""))
 
-        self.assertEqual("b~", Convert.remove_redundant_subscript("b~"))
-        self.assertEqual("abc", Convert.remove_redundant_subscript("ab~b~c"))
+        self.assertEqual("b~", Convert.remove_redundant_subscript_signs("b~"))
+        self.assertEqual(
+            "abc", Convert.remove_redundant_subscript_signs("ab~b~c"))
         self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
 
     def test_add_superscript(self):

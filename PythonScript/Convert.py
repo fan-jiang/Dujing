@@ -52,7 +52,7 @@ def Convert(content):
     for key in charAfterOpenCcConversion_to_CharShownInSimplifiedText:
         content = content.replace(
             key, charAfterOpenCcConversion_to_CharShownInSimplifiedText[key])
-    return remove_redundant_subscript(content)
+    return remove_redundant_subscript_signs(content)
 
 # 一對通假字在正體字中可以不同，但在簡體字中是一個字。所以在簡體版中，通假字標註是原字。應該去除冗餘的通假標註。
 # 比如：舍~捨~：舍在正體字中是住處，比如宿舍。在經文中同“捨”，捨棄意。但是简体字中， 只有一个“舍”字，表达两个意思。
@@ -60,7 +60,7 @@ def Convert(content):
 # 又如：與~歟~ 這對通假字在簡體字中是通一個字。
 
 
-def remove_redundant_subscript(content):
+def remove_redundant_subscript_signs(content):
     i = 0
     while i < len(content) - 3:
         if content[i+1] == '~' and content[i+3] == '~' and content[i] == content[i+2]:
