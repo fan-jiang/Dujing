@@ -115,6 +115,6 @@ class AncientChar:
         return wrapped_with_pandoc_subscript_sign
 
 
-class CheckedToneChar:
+class CheckedToneChar(AncientChar):
     def __init__(self, c):
         self.c = c
