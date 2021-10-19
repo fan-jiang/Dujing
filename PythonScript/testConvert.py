@@ -6,6 +6,7 @@
 
 import unittest
 import Convert
+from Convert import CheckedToneMarker
 
 
 class TestConvert(unittest.TestCase):
