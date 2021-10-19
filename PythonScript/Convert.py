@@ -83,8 +83,7 @@ def mark_checked_tone_chars(book):
 
 
 def mark_checked_tone_char(book, index):
-    ac = AncientChar(book, index)
-    return ac.mark_checked_tone_char()
+    return AncientChar(book, index).mark_checked_tone_char()
 
 
 class AncientChar:
