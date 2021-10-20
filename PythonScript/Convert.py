@@ -104,5 +104,15 @@ class CheckedToneMarker:
 
 
 class ChineseChar:
-    def __init__(self, c):
-        self.c = c
+    def __init__(self, book, index):
+        self.c = book[index]
+        self.index = index
+        self.book = book
+
+    def is_checked_tone_char(self):
+        return self.c in checkedToneChars
+
+    def is_alternative_char(self):
+        wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
+            len(self.book) - 1) and self.book[self.index + 1] == '~'
+        return wrapped_with_pandoc_subscript_sign
