@@ -19,7 +19,7 @@ def update_file():
         if sort == 'Simplified':
             book = Convert.Convert(book)
         else:
-            book = Convert.CheckedToneMarker.mark(
+            book = Convert.CheckedToneMarker.mark_book(
                 book)
         with open(filePath, 'w') as file:
             file.write(book.encode("utf-8"))

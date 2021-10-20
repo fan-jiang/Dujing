@@ -76,7 +76,7 @@ class CheckedToneMarker:
     def __init__(self, book):
         self.book = book
 
-    def mark(self):
+    def mark_book(self):
         result = ""
         for index, _ in enumerate(self.book):
             result += self.mark_checked_tone_char(index)
@@ -84,11 +84,12 @@ class CheckedToneMarker:
 
     def mark_checked_tone_char(self, index):
         if ChineseChar(self.book, index).needCheckedToneMark():
-            return self.to_superscript(index)
+            return self.mark(index)
         return self.book[index]
 
-    def to_superscript(self, index):
-        return '^' + self.book[index] + '^'
+    def mark(self, index):
+        pandoc_superscript_sign = '^'
+        return pandoc_superscript_sign + self.book[index] + pandoc_superscript_sign
 
 
 class ChineseChar:

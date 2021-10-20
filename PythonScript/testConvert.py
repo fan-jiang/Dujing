@@ -23,11 +23,11 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
 
     def test_add_superscript(self):
-        self.assertEqual("", CheckedToneMarker("").mark())
-        self.assertEqual(u"^入^", CheckedToneMarker(u"入").mark())
-        self.assertEqual(u"^入^^日^", CheckedToneMarker(u"入日").mark())
-        self.assertEqual(u"江^入^^日^", CheckedToneMarker(u"江入日").mark())
-        self.assertEqual(u"江~屋~^日^", CheckedToneMarker(u"江~屋~日").mark(),
+        self.assertEqual("", CheckedToneMarker("").mark_book())
+        self.assertEqual(u"^入^", CheckedToneMarker(u"入").mark_book())
+        self.assertEqual(u"^入^^日^", CheckedToneMarker(u"入日").mark_book())
+        self.assertEqual(u"江^入^^日^", CheckedToneMarker(u"江入日").mark_book())
+        self.assertEqual(u"江~屋~^日^", CheckedToneMarker(u"江~屋~日").mark_book(),
                          "do not mark checked tone if char is an alternative word")
 
 
