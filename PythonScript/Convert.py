@@ -75,7 +75,6 @@ def remove_redundant_subscript_signs(content):
 class CheckedToneMarker:
     def __init__(self, book):
         self.book = book
-        self.index = 0
 
     def mark(self):
         result = ""
