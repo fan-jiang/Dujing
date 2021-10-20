@@ -103,6 +103,6 @@ class CheckedToneMarker:
         return '^' + self.c + '^'
 
 
-class CheckedToneChar(CheckedToneMarker):
+class ChineseChar:
     def __init__(self, c):
         self.c = c
