@@ -87,11 +87,11 @@ class CheckedToneMarker:
         return result
 
     def mark_checked_tone_char(self):
-        if self.needMark():
+        if self.needCheckedToneMark():
             return self.to_superscript()
         return self.c
 
-    def needMark(self):
+    def needCheckedToneMark(self):
         return self.is_checked_tone_char() and not self.is_alternative_char()
 
     def is_checked_tone_char(self):
