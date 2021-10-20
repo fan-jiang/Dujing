@@ -27,9 +27,8 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(u"^入^", CheckedToneMarker(u"入").mark())
         self.assertEqual(u"^入^^日^", CheckedToneMarker(u"入日").mark())
         self.assertEqual(u"江^入^^日^", CheckedToneMarker(u"江入日").mark())
-        self.assertEqual(
-            u"江~屋~^日^",  CheckedToneMarker(u"江~屋~日").mark(),
-            "do not mark checked tone if char is an alternative word")
+        self.assertEqual(u"江~屋~^日^", CheckedToneMarker(u"江~屋~日").mark(),
+                         "do not mark checked tone if char is an alternative word")
 
 
 if __name__ == '__main__':
