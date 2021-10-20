@@ -119,3 +119,6 @@ class ChineseChar:
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
             len(self.book) - 1) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
+
+    def needMark(self):
+        return self.is_checked_tone_char() and not self.is_alternative_char()
