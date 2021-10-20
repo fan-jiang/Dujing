@@ -76,7 +76,6 @@ class CheckedToneMarker:
     def __init__(self, book):
         self.book = book
         self.index = 0
-        self.c = ''
 
     def mark(self):
         result = ""
