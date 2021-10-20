@@ -79,10 +79,10 @@ class CheckedToneMarker:
     def mark_book(self):
         result = ""
         for index, _ in enumerate(self.book):
-            result += self.mark_checked_tone_char(index)
+            result += self.mark_char(index)
         return result
 
-    def mark_checked_tone_char(self, index):
+    def mark_char(self, index):
         if ChineseChar(self.book, index).needCheckedToneMark():
             return self.mark(index)
         return self.book[index]
