@@ -100,6 +100,9 @@ class ChineseChar:
         self.index = index
         self.book = book
 
+    def needCheckedToneMark(self):
+        return self.is_checked_tone_char() and not self.is_alternative_char()
+
     def is_checked_tone_char(self):
         return self.c in checkedToneChars
 
@@ -107,6 +110,3 @@ class ChineseChar:
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
             len(self.book) - 1) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
-
-    def needCheckedToneMark(self):
-        return self.is_checked_tone_char() and not self.is_alternative_char()
