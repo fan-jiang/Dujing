@@ -73,25 +73,21 @@ def remove_redundant_subscript_signs(content):
 
 
 def mark_checked_tone_chars(book):
-    result = ""
-    for index, _ in enumerate(book):
-        result += CheckedToneMarker(book, index).mark_checked_tone_char()
-    return result
+    return CheckedToneMarker(book).mark()
 
 
 class CheckedToneMarker:
-    def __init__(self, book, index):
-        self.c = book[index]
+    def __init__(self, book):
         self.book = book
-        self.index = index
+        self.index = 0
+        self.c = ''
 
     def mark(self):
         result = ""
         for index, _ in enumerate(self.book):
-            result += CheckedToneMarker(self.book,
-                                        index).mark_checked_tone_char()
             self.c = self.book[index]
             self.index = index
+            result += self.mark_checked_tone_char()
         return result
 
     def mark_checked_tone_char(self):
@@ -104,7 +100,7 @@ class CheckedToneMarker:
 
     def is_alternative_char(self):
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
-            len(self.book) - self.index) and self.book[self.index + 1] == '~'
+            len(self.book) - 1) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
 
     def to_superscript(self):
