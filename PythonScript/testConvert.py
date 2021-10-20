@@ -26,8 +26,7 @@ class TestConvert(unittest.TestCase):
         self.assertEqual("", CheckedToneMarker("").mark())
         self.assertEqual(u"^入^", CheckedToneMarker(u"入").mark())
         self.assertEqual(u"^入^^日^", CheckedToneMarker(u"入日").mark())
-        self.assertEqual(
-            u"江^入^^日^", Convert.mark_checked_tone_chars(u"江入日"))
+        self.assertEqual(u"江^入^^日^", CheckedToneMarker(u"江入日").mark())
         self.assertEqual(
             u"江~屋~^日^", Convert.mark_checked_tone_chars(
                 u"江~屋~日"),
