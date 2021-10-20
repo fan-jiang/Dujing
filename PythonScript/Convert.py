@@ -88,7 +88,7 @@ class CheckedToneMarker:
 
     def mark_checked_tone_char(self):
         cc = ChineseChar(self.book, self.index)
-        if self.needCheckedToneMark():
+        if cc.needCheckedToneMark():
             return self.to_superscript()
         return self.c
 
