@@ -72,10 +72,6 @@ def remove_redundant_subscript_signs(content):
 #　extension](https://pandoc.org/MANUAL.html#extension-superscript-subscript).
 
 
-def mark_checked_tone_chars(book):
-    return CheckedToneMarker(book).mark()
-
-
 class CheckedToneMarker:
     def __init__(self, book):
         self.book = book
