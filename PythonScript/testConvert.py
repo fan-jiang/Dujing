@@ -23,8 +23,7 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(u"舍", Convert.Convert(u"舍~舍~"))
 
     def test_add_superscript(self):
-        self.assertEqual(
-            "", CheckedToneMarker("").mark())
+        self.assertEqual("", CheckedToneMarker("").mark())
         self.assertEqual(
             u"^入^", Convert.mark_checked_tone_chars(u"入"))
         self.assertEqual(
