@@ -92,7 +92,7 @@ class CheckedToneMarker:
         return self.book[self.index]
 
     def to_superscript(self):
-        return '^' + self.c + '^'
+        return '^' + self.book[self.index] + '^'
 
 
 class ChineseChar:
