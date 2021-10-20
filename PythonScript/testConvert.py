@@ -25,8 +25,7 @@ class TestConvert(unittest.TestCase):
     def test_add_superscript(self):
         self.assertEqual("", CheckedToneMarker("").mark())
         self.assertEqual(u"^入^", CheckedToneMarker(u"入").mark())
-        self.assertEqual(
-            u"^入^^日^", Convert.mark_checked_tone_chars(u"入日"))
+        self.assertEqual(u"^入^^日^", CheckedToneMarker(u"入日").mark())
         self.assertEqual(
             u"江^入^^日^", Convert.mark_checked_tone_chars(u"江入日"))
         self.assertEqual(
