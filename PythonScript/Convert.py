@@ -91,6 +91,7 @@ class CheckedToneMarker:
         return result
 
     def mark_char(self, index):
+        cc = ChineseChar(self.book, index)
         if ChineseChar(self.book, index).needCheckedToneMark():
             return self.mark(index)
         return self.book[index]
