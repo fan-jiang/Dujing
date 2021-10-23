@@ -78,6 +78,9 @@ def remove_redundant_subscript_signs(content):
 
 
 class CheckedToneMarker:
+    open_tag = '<font class="intro">'
+    close_tag = "</font>"
+
     def __init__(self, book):
         self.book = book
 
@@ -93,8 +96,7 @@ class CheckedToneMarker:
         return self.book[index]
 
     def mark(self, index):
-        pandoc_superscript_sign = '^'
-        return pandoc_superscript_sign + self.book[index] + pandoc_superscript_sign
+        return '<font class="intro">' + self.book[index] + "</font>"
 
 
 class ChineseChar:
