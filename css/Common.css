@@ -10,9 +10,9 @@ sub
 	display: none;
 }
 
-sup /*superscript: Checked tone characters ^^入聲字*/
+.checkedTone /*Checked tone characters ^^入聲字*/
 {
-	/*Override the default superscript style: font size (might be 70%) and vertical alignment (sup)*/
+	/*Override the default checkedTone style: font size (might be 70%) and vertical alignment (sup)*/
 	font-size: 100%;
 	vertical-align: top;
 }

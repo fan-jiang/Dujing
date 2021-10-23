@@ -34,7 +34,7 @@ sub /*Alternative word*/
 	bottom: 0.3em;
 }
 
-sup /*superscript: Checked tone characters ^^入聲字*/
+.checkedTone /*Checked tone characters ^^入聲字*/
 {
 	/*Add dot for each character by using text-emphasis: see https://stackoverflow.com/a/27473185*/
 	text-emphasis-style: dot;
