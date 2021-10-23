@@ -93,11 +93,11 @@ class CheckedToneMarker:
     def mark_char(self, index):
         cc = ChineseChar(self.book, index)
         if cc.needCheckedToneMark():
-            return self.mark(index)
+            return self.mark(cc)
         return self.book[index]
 
-    def mark(self, index):
-        return '<font class="checkedTone">' + self.book[index] + "</font>"
+    def mark(self, cc):
+        return '<font class="checkedTone">' + cc.char() + "</font>"
 
 
 class ChineseChar:
@@ -116,3 +116,6 @@ class ChineseChar:
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
             len(self.book) - 1) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
+
+    def char(self):
+        return self.book[self.index]
