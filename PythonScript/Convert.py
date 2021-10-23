@@ -96,7 +96,7 @@ class CheckedToneMarker:
         return self.book[index]
 
     def mark(self, index):
-        return '<font class="intro">' + self.book[index] + "</font>"
+        return '<font class="checkedTone">' + self.book[index] + "</font>"
 
 
 class ChineseChar:
