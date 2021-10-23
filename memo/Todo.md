@@ -1,4 +1,4 @@
-- Mark入声字with dot at the bottom of the character. 
+- Center chapter title
 - Add pinyin (reference: https://zhuanlan.zhihu.com/p/66456862) Use tool https://github.com/mozillazg/python-pinyin
 
 - Replace OpenCC with the latest version 1.0.4 (how to build the source code under windows?)
