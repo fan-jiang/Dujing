@@ -3,6 +3,7 @@
 # Todo：
 # - place sign with checked tone.
 # - superscript mixed sub scpript.
+# - this also mess up non decorated version.
 
 from CheckedToneChars import checkedToneChars
 
