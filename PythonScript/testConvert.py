@@ -25,7 +25,7 @@ class TestConvert(unittest.TestCase):
     def test_add_superscript(self):
         self.assertEqual("", CheckedToneMarker("").mark_book())
         self.assertEqual('<font class="intro">入</font>',
-                         CheckedToneMarker(u"入").mark_book())
+                         CheckedToneMarker("入").mark_book())
         self.assertEqual('江<font class="intro">入</font><font class="intro">日</font>',
                          CheckedToneMarker("江入日").mark_book())
         self.assertEqual("江~屋~" + '<font class="intro">日</font>', CheckedToneMarker("江~屋~日").mark_book(),
