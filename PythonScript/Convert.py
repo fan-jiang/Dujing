@@ -1,5 +1,9 @@
 # This Python file uses the following encoding: utf-8
 
+# Todo：
+# - place sign with checked tone.
+# - superscript mixed sub scpript.
+
 from CheckedToneChars import checkedToneChars
 
 charAfterOpenCcConversion_to_CharShownInSimplifiedText = {
