@@ -2,7 +2,7 @@
 
 # Todo：
 # - place sign with checked tone.
-# - superscript mixed sub scpript.
+# - superscript mixed sub script.
 # - this also mess up non decorated version.
 
 from CheckedToneChars import checkedToneChars
@@ -97,7 +97,10 @@ class CheckedToneMarker:
         return self.book[index]
 
     def mark(self, cc):
-        return '<font class="checkedTone">' + cc.char() + "</font>"
+        c = cc.char()
+        if cc.is_place_name():
+            c = "`" + c + "`"
+        return '<font class="checkedTone">' + c + '</font>'
 
 
 class ChineseChar:
@@ -116,6 +119,11 @@ class ChineseChar:
         wrapped_with_pandoc_subscript_sign = self.index > 0 and self.book[self.index - 1] == '~' and self.index < (
             len(self.book) - 1) and self.book[self.index + 1] == '~'
         return wrapped_with_pandoc_subscript_sign
+
+    def is_place_name(self):
+        wrapped_with_code_sign = self.index > 0 and self.book[self.index - 1] == '`' and self.index < (
+            len(self.book) - 1) and self.book[self.index + 1] == '`'
+        return wrapped_with_code_sign
 
     def char(self):
         return self.book[self.index]
