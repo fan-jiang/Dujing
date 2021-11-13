@@ -1,9 +1,9 @@
 # This Python file uses the following encoding: utf-8
 
 # Todo：
-# - place sign with checked tone.
-# - superscript mixed sub script.
-# - this also mess up non decorated version.
+# - Mark checked tone for place name. Use code sign `` to mark place is not good solution as it
+# disallows embeded style. Other marker can be used, for example, @, #, +, _
+
 
 from CheckedToneChars import checkedToneChars
 
