@@ -97,8 +97,7 @@ class CheckedToneMarker:
         return self.book[index]
 
     def mark(self, cc):
-        c = cc.char()
-        return '<font class="checkedTone">' + c + '</font>'
+        return '<font class="checkedTone">' + cc.char() + '</font>'
 
 
 class ChineseChar:
