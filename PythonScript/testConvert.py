@@ -30,8 +30,8 @@ class TestConvert(unittest.TestCase):
                          CheckedToneMarker("江入日").mark_book())
         self.assertEqual("江~屋~" + '<font class="checkedTone">日</font>', CheckedToneMarker("江~屋~日").mark_book(),
                          "do not mark checked tone if char is an alternative word")
-        self.assertEqual('江`<font class="checkedTone">`北`</font>`<font class="checkedTone">日</font>', CheckedToneMarker("江`北`日").mark_book(),
-                         "mark checked tone even if char is a place name")
+        self.assertEqual('江`北`<font class="checkedTone">日</font>', CheckedToneMarker("江`北`日").mark_book(),
+                         "do not mark checked tone even if char is a place name")
 
 
 if __name__ == '__main__':

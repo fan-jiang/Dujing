@@ -98,8 +98,6 @@ class CheckedToneMarker:
 
     def mark(self, cc):
         c = cc.char()
-        if cc.is_place_name():
-            c = "`" + c + "`"
         return '<font class="checkedTone">' + c + '</font>'
 
 
@@ -110,7 +108,7 @@ class ChineseChar:
         self.book = book
 
     def needCheckedToneMark(self):
-        return self.is_checked_tone_char() and not self.is_alternative_char()
+        return self.is_checked_tone_char() and not self.is_alternative_char() and not self.is_place_name()
 
     def is_checked_tone_char(self):
         return self.c in checkedToneChars
