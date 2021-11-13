@@ -2,7 +2,7 @@
 
 # Todo：
 # - Mark checked tone for place name. Use code sign `` to mark place is not good solution as it
-# disallows embeded style. Other marker can be used, for example, @, #, +, _
+# disallows embeded style. Other marker can be used, for example, @, #, +, _, etc.
 
 
 from CheckedToneChars import checkedToneChars
