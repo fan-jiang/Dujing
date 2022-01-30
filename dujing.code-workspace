@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\liu-wu"
+		},
+		{
+			"path": "..\\古今文合排系统"
 		}
 	],
 	"settings": {
@@ -35,6 +41,6 @@
 					"cmd": "cd ${workspaceFolder}\\PythonScript && python -m unittest discover . && git commit -am working || git reset --hard"
 				}
 			]
-		} 
+		}
 	}
 }
